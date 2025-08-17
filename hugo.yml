@@ -9,6 +9,8 @@ module:
   mounts:
     - source: static/files
       target: static/files
+    - source: static/favicon.ico
+      target: static/favicon.ico
     - source: ./node_modules/flag-icon-css/flags
       target: static/flags
     - source: ./node_modules/@fontsource/mulish/files
@@ -51,6 +53,8 @@ enableEmoji: true
 params:
   # GitHub repo URL of your site
   gitRepo: https://github.com/punitpi/typedbyme
+
+  background: 'images/File 2.jpg'
 
   features:
     # Enable portfolio section
