@@ -26,22 +26,27 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest'     # or pin a version matching Toha’s reqs
-          extended: true             # Toha needs extended
+          hugo-version: 'latest'     
+          extended: true           
+
+      - name: Update Hugo Modules
+        run: hugo mod tidy
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '22'         
+          node-version: 20      
 
       - name: Install theme npm deps (from hugo mod)
         run: |
           hugo mod npm pack
-          npm ci
+          npm install
+          npm install cytoscape@3.30.2 --save-dev
 
       - name: Build site
         env:
           HUGO_ENV: production
-        run: hugo --minify --gc
+        run: hugo --minify
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

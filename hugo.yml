@@ -1,7 +1,6 @@
 baseURL: 'https://typedbyme.puneeth.io/'
 languageCode: 'en'
 title: 'typedbyme'
-theme: '' # (left empty when using modules)
 
 # Use Hugo modules to add theme
 module:
