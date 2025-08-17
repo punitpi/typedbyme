@@ -1,0 +1,20 @@
+# some information about you
+name: 'Puneeth Prakash'
+nickname: 'Puneeth'
+# greeting message before your name. it will default to "Hi! I am" if not provided
+greeting: 'Hi, I am'
+image: 'images/author/puneeth.png'
+
+# give your some contact information. they will be used in the footer
+contactInfo:
+  email: 'contact@puneeth.io'
+  github: punitpi
+  linkedin: ppuneeth
+
+summary:
+  - Software developer (7+ yrs) in C#, Node.js, AWS & Azure
+  - Build microservices & APIs with Docker & Kubernetes
+  - Strong in SQL Server, MongoDB, MySQL, DynamoDB & Redis
+  - Focused on automation, CI/CD & self‑hosted homelab
+  - Interested in security & system reliability
+  - Homebrewer outside of work

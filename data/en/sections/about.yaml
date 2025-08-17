@@ -1,0 +1,79 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: Senior Software Engineer
+# your company information
+company:
+  name: 'OneAdvanced'
+  url: 'https://www.oneadvanced.com'
+
+# your resume. this file path should be relative to you "static" directory
+resume: 'files/Resume.pdf'
+
+# a summary about you
+summary: 'Software developer with 7+ years experience across C#, Node.js, AWS & Azure. I design and build microservices and APIs, automate CI/CD workflows, and work with SQL & NoSQL databases (SQL Server, MongoDB, MySQL, DynamoDB, Redis). Passionate about homelab, security, reliability and clean, maintainable systems. Outside work I enjoy homebrewing.'
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+  - name: Email
+    icon: 'fas fa-envelope'
+    url: 'mailto:contact@puneeth.io'
+
+  - name: Github
+    icon: 'fab fa-github'
+    url: 'https://github.com/punitpi'
+
+  - name: LinkedIn
+    icon: 'fab fa-linkedin'
+    url: 'https://www.linkedin.com/in/ppuneeth/'
+
+# Show your badges
+# Replaced dummy certifications with relevant skill / focus indicators
+badges:
+  - type: certification
+    name: AWS Certified Solutions Architect – Associate
+    url: 'https://www.credly.com/badges/a26c1fa7-0a42-41b2-8fc4-1639c0723f37/linked_in_profile'
+    badge: 'https://images.credly.com/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png'
+
+  - type: soft-skill-indicator
+    name: Microservices & API Design
+    percentage: 90
+    color: '#4e79a7'
+
+  - type: soft-skill-indicator
+    name: Cloud (AWS & Azure)
+    percentage: 85
+    color: '#f28e2b'
+
+  - type: soft-skill-indicator
+    name: Databases (SQL & NoSQL)
+    percentage: 80
+    color: '#59a14f'
+
+  - type: soft-skill-indicator
+    name: DevOps & Automation
+    percentage: 90
+    color: '#e15759'
+
+  - type: soft-skill-indicator
+    name: Security & Reliability
+    percentage: 80
+    color: '#b07aa1'
+
+  - type: soft-skill-indicator
+    name: Teamwork & Collaboration
+    percentage: 90
+    color: '#edc948'
+
+  - type: soft-skill-indicator
+    name: Continuous Learning
+    percentage: 85
+    color: '#76b7b2'
