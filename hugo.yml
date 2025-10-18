@@ -79,9 +79,8 @@ params:
     analytics:
       enable: true
       services:
-        # GoatCounter analytics
         goatCounter:
-          code: typedbyme.puneeth.io
+          code: builder023
 
     # Enable support section
     support:
