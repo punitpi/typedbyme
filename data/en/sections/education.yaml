@@ -1,0 +1,31 @@
+# section information
+section:
+  name: Education
+  id: education
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+  template: sections/education.html
+
+degrees:
+- name: B.E. in Computer Science and Engineering
+  icon: fa-graduation-cap
+  timeframe: 2013-2017
+  institution:
+    name: Visvesvaraya Technological University
+    url: "https://vtu.ac.in/"
+    # logo: /images/sections/education/vtu.png  # Add logo later
+  # grade: (Optional)
+  #   scale: CGPA
+  #   achieved: 7.5
+  #   outOf: 10
+  # takenCourses: (Optional)
+  #   - name: Data Structures and Algorithms
+  #   - name: Database Management Systems
+  #   - name: Operating Systems
+  #   - name: Computer Networks
+  #   - name: Software Engineering
+  # publications: (Optional - if you had any college publications)
+  # extracurricularActivities: (Optional)

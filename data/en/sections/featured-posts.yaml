@@ -1,0 +1,22 @@
+# section information
+section:
+  name: Featured Posts
+  id: featured-posts
+  enable: true
+  weight: 7.5
+  showOnNavbar: false
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Specify how many posts to show
+numFeaturedPosts: 3
+
+# Manually specify which posts to feature
+# These should match the file names in content/posts/ (without .md extension)
+posts:
+- docker-best-practices
+- aws-eks-terraform-guide
+- homelab-setup-guide
+
+# Alternative: You can also let Hugo auto-select featured posts by adding this to post frontmatter:
+# featured: true

@@ -1,0 +1,54 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your experiences
+experiences:
+  - company:
+      name: OneAdvanced
+      url: 'https://www.oneadvanced.com'
+      location: Bengaluru, India
+      # logo: /images/sections/companies/oneadvanced.png  # Add logo later
+      # darkLogo: /images/sections/companies/oneadvanced-dark.png
+      overview: 'OneAdvanced is a leading UK-based software and services company providing mission-critical software for businesses.'
+    positions:
+      - designation: Senior Software Engineer
+        start: Feb 2021
+        end: 10th Oct 2025 # Omit 'end' for current position
+        responsibilities:
+          - Developed cloud-native solutions using Node.js, C#, Python across AWS (Lambda, ECS, API Gateway, DynamoDB) and Azure (Functions, WebJobs), implementing OAuth2/SSO/2FA security with Keycloak
+          - Built complete CI/CD ecosystems with GitHub Actions, Harness, and Terraform/CloudFormation, managing full application lifecycle from repo setup through deployment and monitoring
+          - Architected and delivered BYOBI (Bring Your Own BI) platform from requirements to production using dbt scripts and Snowflake data warehouse
+          - Deployed Kubernetes clusters on AWS EKS with Inlets Pro reverse proxy, cert-manager SSL automation, and GitOps workflows
+          - Resolved penetration testing and SonarQube security vulnerabilities while achieving $1,000+ monthly AWS cost optimization
+          - Conducted technical training on AWS services, DevOps practices, and architectural patterns
+      - designation: Software Engineer
+        start: 18th Mar 2018
+        end: Feb 2021
+        responsibilities:
+          - Engineered .NET WinForms automation tool with background workers, reducing deployment time by 92% (60 to 5 minutes)
+          - Developed serverless applications using AWS Lambda, API Gateway, and S3 for customer-facing portals
+          - Optimized MSSQL stored procedures achieving 50% performance improvement
+          - Created automated testing and support tools using C#, Bash, PowerShell for development workflows
+          - Implemented Jenkins CI/CD pipelines for automated deployments
+
+  - company:
+      name: Samsung R&D Institute India
+      url: 'https://research.samsung.com/sri-b'
+      location: Bengaluru, India
+      # logo: /images/sections/companies/samsung.png  # Add logo later
+      overview: "Samsung R&D Institute India - Bangalore is Samsung's largest R&D center outside Korea, focusing on mobile, AI, and IoT technologies."
+    positions:
+      - designation: Test Engineer
+        start: Mar 2017
+        end: Nov 2017
+        responsibilities:
+          - Created and executed 600+ test cases for Project Bixby (functional, integration, performance, regression)
+          - Managed test server deployments and build validation
+          - Analyzed Android crash reports using ADB and DDMS tools

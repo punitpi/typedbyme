@@ -1,0 +1,44 @@
+# section information
+section:
+  name: Accomplishments
+  id: accomplishments
+  enable: true
+  weight: 6.5
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your accomplishments
+accomplishments:
+- name: AWS Certified Solutions Architect – Associate
+  timeline: "2023"
+  organization:
+    name: Amazon Web Services
+    url: https://aws.amazon.com/certification/
+  courseOverview: Validates expertise in designing distributed systems on AWS, including compute, storage, database, networking, and security services.
+  certificateURL: "https://www.credly.com/badges/a26c1fa7-0a42-41b2-8fc4-1639c0723f37/linked_in_profile"
+
+- name: Spot Award - Critical Project Completion
+  timeline: "2023"
+  organization:
+    name: OneAdvanced
+    url: https://www.oneadvanced.com
+  courseOverview: Recognized with a Spot Award for completing a critical project ahead of schedule, demonstrating exceptional technical execution and project management.
+  # certificateURL: "" # Internal company award
+
+- name: Cost Optimization Achievement
+  timeline: "2022"
+  organization:
+    name: OneAdvanced
+    url: https://www.oneadvanced.com
+  courseOverview: Achieved $1,000+ monthly savings through AWS cost optimization by implementing strategic resource management practices including right-sizing, reserved instances, and automated shutdown policies.
+  # certificateURL: "" # Internal company achievement
+
+# Add more certifications/accomplishments as you earn them
+# - name: Certification Name
+#   timeline: "Year"
+#   organization:
+#     name: Organization Name
+#     url: https://example.com
+#   courseOverview: Description of what this certification validates
+#   certificateURL: "https://credential-url.com"

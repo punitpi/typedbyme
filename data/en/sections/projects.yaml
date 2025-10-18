@@ -1,0 +1,80 @@
+# section information
+section:
+  name: Projects
+  id: projects
+  enable: true
+  weight: 5
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Filter buttons - disabled to hide categories
+# buttons:
+# - name: All
+#   filter: "all"
+# - name: Professional
+#   filter: "professional"
+# - name: Personal
+#   filter: "personal"
+# - name: Open Source
+#   filter: "opensource"
+
+# your projects
+projects:
+  - name: My Express Template
+    # logo: /images/sections/projects/nodejs.png  # Add logo later
+    role: Creator
+    timeline: '2023'
+    repo: https://github.com/punitpi/my-express-template
+    summary: Standard Express.js template with custom configurations and best practices for rapid API development. Includes authentication, error handling, and logging setup.
+    tags: ['JavaScript', 'Node.js', 'Express.js', 'Backend']
+
+  - name: Scotland Yard Tracker
+    # logo: /images/sections/projects/game.png  # Add logo later
+    role: Developer
+    timeline: '2022'
+    repo: https://github.com/punitpi/scotland-yard-tracker
+    summary: Scotland Yard board game tracker application to help players track Mr. X's movements and deduce possible locations during gameplay.
+    tags: ['JavaScript', 'Game', 'Web App']
+
+  - name: DSA Sprint
+    # logo: /images/sections/projects/dsa.png  # Add logo later
+    role: Creator
+    timeline: '2022'
+    repo: https://github.com/punitpi/dsa-sprint
+    summary: Data Structures and Algorithms practice repository with implementations and solutions to common DSA problems for interview preparation.
+    tags: ['JavaScript', 'Algorithms', 'Data Structures', 'Learning']
+
+  - name: Adhoc Scripts
+    # logo: /images/sections/projects/scripts.png  # Add logo later
+    role: Creator
+    timeline: '2020-Present'
+    repo: https://github.com/punitpi/adhoc-scripts
+    summary: Collection of utility shell scripts for automation, system administration, and development workflow optimization.
+    tags: ['Shell', 'Bash', 'Automation', 'DevOps']
+
+  # Professional projects at OneAdvanced
+  - name: Microservices Platform
+    # logo: /images/sections/projects/microservices.png  # Add logo later
+    role: Senior Software Engineer
+    timeline: '2021-Present'
+    # repo: # Private company project
+    summary: Built scalable microservices infrastructure on AWS using ECS, Lambda, and DynamoDB. Implemented OAuth2 authentication and event-driven architecture.
+    tags: ['Node.js', 'AWS', 'Microservices', 'OAuth2', 'DynamoDB']
+
+  - name: CI/CD Pipeline Automation
+    # logo: /images/sections/projects/cicd.png  # Add logo later
+    role: DevOps Engineer
+    timeline: '2020-2023'
+    # repo: # Private company project
+    summary: Developed end-to-end CI/CD pipelines using GitHub Actions, Harness, Terraform, and CloudFormation. Reduced deployment time by 70%.
+    tags:
+      ['GitHub Actions', 'Terraform', 'CloudFormation', 'DevOps', 'Automation']
+
+  - name: Kubernetes on EKS
+    # logo: /images/sections/projects/kubernetes.png  # Add logo later
+    role: Platform Engineer
+    timeline: '2022-2023'
+    # repo: # Private company project
+    summary: Deployed and managed Kubernetes clusters on AWS EKS with Inlets Pro reverse proxy, Cert-Manager for SSL, and comprehensive monitoring.
+    tags: ['Kubernetes', 'AWS EKS', 'Docker', 'DevOps', 'Infrastructure']

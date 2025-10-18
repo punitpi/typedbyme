@@ -54,8 +54,10 @@ params:
   # GitHub repo URL of your site
   gitRepo: https://github.com/punitpi/typedbyme
 
+  # Background image for home page
   background: 'images/File 2.jpg'
 
+  # Features
   features:
     # Enable portfolio section
     portfolio:
@@ -65,17 +67,46 @@ params:
     blog:
       enable: true
 
+    # Enable notes section
+    notes:
+      enable: false
+
     # Enable Table of contents in reading page
     toc:
       enable: true
+
+    # Enable analytics (optional)
+    analytics:
+      enable: true
+      services:
+        # GoatCounter analytics
+        goatCounter:
+          code: typedbyme.puneeth.io
+
+    # Enable support section
+    support:
+      enable: false
+
+    # Enable dark mode toggle
+    darkMode:
+      provider: darkreader
+      enable: true
+      default: system
 
   # Configure footer
   footer:
     enable: true
 
+  # Newsletter (disabled for now)
   newsletter:
     enable: false
 
+  # Logo configuration
   logo:
     main: images/favicon/favicon-32x32.png
     favicon: images/favicon/favicon-16x16.png
+
+  # Author information
+  author:
+    name: Puneeth Prakash
+    image: images/author/puneeth.png
