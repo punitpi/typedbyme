@@ -11,42 +11,42 @@ section:
 
 # Your Skills
 skills:
-- name: Backend Development
-  # logo: /images/sections/skills/backend.png  # Add logo image later
-  summary: "Node.js, Express.js, .NET, microservices architecture, and RESTful API design."
-  url: "#"
+  - name: Backend Development
+    # logo: /images/sections/skills/backend.png  # Add logo image later
+    summary: 'Node.js, Express.js, .NET, microservices architecture, and RESTful API design.'
+    #url: "#"
 
-- name: Cloud Platforms
-  # logo: /images/sections/skills/cloud.png  # Add logo image later
-  summary: "AWS & Azure - Lambda, ECS, EKS, Fargate, API Gateway, SNS, SQS, CloudWatch. AWS Certified Solutions Architect."
-  url: "#"
+  - name: Cloud Platforms
+    # logo: /images/sections/skills/cloud.png  # Add logo image later
+    summary: 'AWS & Azure - Lambda, ECS, EKS, Fargate, API Gateway, SNS, SQS, CloudWatch. AWS Certified Solutions Architect.'
+    #url: "#"
 
-- name: Containers & Orchestration
-  # logo: /images/sections/skills/kubernetes.png  # Add logo image later
-  summary: "Docker, Kubernetes (EKS), container orchestration, and deployment strategies."
-  url: "#"
+  - name: Containers & Orchestration
+    # logo: /images/sections/skills/kubernetes.png  # Add logo image later
+    summary: 'Docker, Kubernetes (EKS), container orchestration, and deployment strategies.'
+    #url: "#"
 
-- name: Databases
-  # logo: /images/sections/skills/database.png  # Add logo image later
-  summary: "MSSQL, DynamoDB, MongoDB, MySQL, Redis - both SQL and NoSQL database design and optimization."
-  url: "#"
+  - name: Databases
+    # logo: /images/sections/skills/database.png  # Add logo image later
+    summary: 'MSSQL, DynamoDB, MongoDB, MySQL, Redis - both SQL and NoSQL database design and optimization.'
+    #url: "#"
 
-- name: DevOps & CI/CD
-  # logo: /images/sections/skills/devops.png  # Add logo image later
-  summary: "GitHub Actions, Jenkins, Harness, automated deployment pipelines, and release management."
-  url: "#"
+  - name: DevOps & CI/CD
+    # logo: /images/sections/skills/devops.png  # Add logo image later
+    summary: 'GitHub Actions, Jenkins, Harness, automated deployment pipelines, and release management.'
+    #url: "#"
 
-- name: Infrastructure as Code
-  # logo: /images/sections/skills/iac.png  # Add logo image later
-  summary: "Terraform, CloudFormation - provisioning and managing cloud infrastructure."
-  url: "#"
+  - name: Infrastructure as Code
+    # logo: /images/sections/skills/iac.png  # Add logo image later
+    summary: 'Terraform, CloudFormation - provisioning and managing cloud infrastructure.'
+    #url: "#"
 
-- name: Programming Languages
-  # logo: /images/sections/skills/programming.png  # Add logo image later
-  summary: "JavaScript, C#, SQL, Bash, YAML - full-stack development capabilities."
-  url: "#"
+  - name: Programming Languages
+    # logo: /images/sections/skills/programming.png  # Add logo image later
+    summary: 'JavaScript, C#, SQL, Bash, YAML - full-stack development capabilities.'
+    #url: "#"
 
-- name: Authentication & Security
-  # logo: /images/sections/skills/security.png  # Add logo image later
-  summary: "OAuth2, Keycloak, Azure AD, encryption, secure API development, and security best practices."
-  url: "#"
+  - name: Authentication & Security
+    # logo: /images/sections/skills/security.png  # Add logo image later
+    summary: 'OAuth2, Keycloak, Azure AD, encryption, secure API development, and security best practices.'
+    #url: "#"

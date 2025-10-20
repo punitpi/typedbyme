@@ -18,7 +18,7 @@ company:
 resume: 'files/Resume.pdf'
 
 # a summary about you
-summary: 'Software developer with 7+ years experience across C#, Node.js, AWS & Azure. I design and build microservices and APIs, automate CI/CD workflows, and work with SQL & NoSQL databases (SQL Server, MongoDB, MySQL, DynamoDB, Redis). Passionate about homelab, security, reliability and clean, maintainable systems. Outside work I enjoy homebrewing.'
+summary: 'Software developer with 7+ years experience across C#, Node.js, AWS & Azure. I design and build microservices and APIs, automate CI/CD workflows, and work with SQL & NoSQL databases (SQL Server, MongoDB, MySQL, DynamoDB, Redis). Passionate about homelab, security, reliable and clean maintainable systems. Outside work I enjoy homebrewing and backpacking'
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
