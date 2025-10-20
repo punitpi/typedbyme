@@ -23,7 +23,7 @@ skills:
 
   - name: Containers & Orchestration
     # logo: /images/sections/skills/kubernetes.png  # Add logo image later
-    summary: 'Docker, Kubernetes (EKS), container orchestration, and deployment strategies.'
+    summary: 'Docker, Kubernetes (EKS) and deployment strategies.'
     #url: "#"
 
   - name: Databases
