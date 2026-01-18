@@ -83,6 +83,21 @@ params:
         goatCounter:
           code: builder023
 
+    comment:
+      enable: true
+      services:
+        giscus:
+          repo: punitpi/typedbyme
+          repoID: R_kgDOPfWEvA
+          category: TypedByMe Comments
+          categoryID: DIC_kwDOPfWEvM4C1GlO
+          theme: light
+          map: url
+          reaction: 1
+          metadata: 0
+          inputPosition: bottom
+          crossOrigin: anonymous
+
     # Enable support section
     support:
       enable: false
