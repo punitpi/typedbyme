@@ -11,6 +11,19 @@ section:
 # Your experiences
 experiences:
   - company:
+      name: OMICRON electronics
+      url: 'https://www.omicronenergy.com'
+      location: Klaus, Vorarlberg, Austria
+      overview: 'OMICRON electronics is a global leader in test and measurement solutions for electrical power engineering, delivering innovative testing technology for the energy sector.'
+    positions:
+      - designation: DevSecOps Engineer / Software Engineer
+        start: Dec 2025
+        responsibilities:
+          - Designed and deployed a full observability platform on Kubernetes (AKS) using the LGTM stack (Loki, Grafana, Tempo, Mimir), covering metrics, logs, traces, and alerting
+          - Built the Azure infrastructure from scratch using Terraform and packaged all observability components into a custom umbrella Helm chart for repeatable, production-grade deployments
+          - Applying DevSecOps practices including cloud infrastructure security, vulnerability management, and CI/CD pipeline hardening
+
+  - company:
       name: OneAdvanced
       url: 'https://www.oneadvanced.com'
       location: Bengaluru, India
@@ -20,23 +33,24 @@ experiences:
     positions:
       - designation: Senior Software Engineer
         start: Feb 2021
-        end: 10th Oct 2025 # Omit 'end' for current position
+        end: Oct 2025
         responsibilities:
-          - Developed cloud-native solutions using Node.js, C#, Python across AWS (Lambda, ECS, API Gateway, DynamoDB) and Azure (Functions, WebJobs), implementing OAuth2/SSO/2FA security with Keycloak
-          - Built complete CI/CD ecosystems with GitHub Actions, Harness, and Terraform/CloudFormation, managing full application lifecycle from repo setup through deployment and monitoring
-          - Architected and delivered BYOBI (Bring Your Own BI) platform from requirements to production using dbt scripts and Snowflake data warehouse
-          - Deployed Kubernetes clusters on AWS EKS with Inlets Pro reverse proxy, cert-manager SSL automation, and GitOps workflows
+          - Architected and deployed cloud-native microservices using Node.js, AWS Lambda, and Kubernetes (EKS) to enhance system scalability and reduce operational costs
+          - Built secure middleware microservice on AWS Fargate ECS with OAuth2 authentication via Keycloak, processing 100K+ daily transactions with 99.9% uptime
+          - Designed reusable .NET Worker Services for event-driven backend operations, reducing code duplication by 60% across multiple projects
+          - Implemented end-to-end CI/CD pipelines using GitHub Actions, Harness, CloudFormation, and Terraform, cutting deployment time from hours to minutes
+          - Deployed and maintained production Kubernetes clusters on AWS EKS with Inlets Pro reverse proxy and automated TLS certificate management
+          - Developed Azure WebJobs for real-time webhook integration with Microsoft services, enabling seamless event synchronization across platforms
           - Resolved penetration testing and SonarQube security vulnerabilities while achieving $1,000+ monthly AWS cost optimization
-          - Conducted technical training on AWS services, DevOps practices, and architectural patterns
       - designation: Software Engineer
-        start: 18th Mar 2018
+        start: Mar 2018
         end: Feb 2021
         responsibilities:
-          - Engineered .NET WinForms automation tool with background workers, reducing deployment time by 92% (60 to 5 minutes)
-          - Developed serverless applications using AWS Lambda, API Gateway, and S3 for customer-facing portals
-          - Optimized MSSQL stored procedures achieving 50% performance improvement
-          - Created automated testing and support tools using C#, Bash, PowerShell for development workflows
-          - Implemented Jenkins CI/CD pipelines for automated deployments
+          - Developed automated .NET WinForms application for software installation and database updates, enhancing efficiency by 92% and reducing setup time to 5 minutes
+          - Collaborated on serverless customer portal development using AWS Lambda, API Gateway, and S3
+          - Optimized critical SQL stored procedures, achieving 50% improvement in query performance and database efficiency
+          - Implemented Jenkins CI/CD pipelines for automated testing and deployment
+          - Gained expertise in React framework, contributing to front-end development initiatives
 
   - company:
       name: Samsung R&D Institute India

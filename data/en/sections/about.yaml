@@ -8,17 +8,17 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Senior Software Engineer
+designation: DevSecOps Engineer / Software Engineer
 # your company information
 company:
-  name: 'OneAdvanced'
-  url: 'https://www.oneadvanced.com'
+  name: 'OMICRON electronics'
+  url: 'https://www.omicronenergy.com'
 
 # your resume. this file path should be relative to you "static" directory
 resume: 'files/Resume.pdf'
 
 # a summary about you
-summary: 'Software developer with 7+ years experience across C#, Node.js, AWS & Azure. I design and build microservices and APIs, automate CI/CD workflows, and work with SQL & NoSQL databases (SQL Server, MongoDB, MySQL, DynamoDB, Redis). Passionate about homelab, security, reliable and clean maintainable systems. Outside work I enjoy homebrewing and backpacking'
+summary: 'Software developer with 8+ years of experience specialising in DevSecOps, cloud-native architecture, and microservices. Currently building secure, reliable engineering systems at OMICRON electronics in Austria. I work across C#, Node.js, AWS and Azure, automating CI/CD workflows, hardening pipelines, and designing APIs and infrastructure that scale. Passionate about security, self-hosting, and homelab. Outside work I enjoy homebrewing and backpacking.'
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -44,36 +44,17 @@ badges:
     badge: 'https://images.credly.com/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png'
 
   - type: soft-skill-indicator
-    name: Microservices & API Design
-    #percentage: 90
-    color: '#4e79a7'
-
-  - type: soft-skill-indicator
-    name: Cloud (AWS & Azure)
-    #percentage: 85
+    name: Cloud Architecture
     color: '#f28e2b'
 
   - type: soft-skill-indicator
-    name: Databases (SQL & NoSQL)
-    #percentage: 80
-    color: '#59a14f'
-
-  - type: soft-skill-indicator
-    name: DevOps & Automation
-    #percentage: 90
+    name: DevSecOps
     color: '#e15759'
 
   - type: soft-skill-indicator
-    name: Security & Reliability
-    #percentage: 80
-    color: '#b07aa1'
+    name: Microservices & APIs
+    color: '#4e79a7'
 
   - type: soft-skill-indicator
-    name: Teamwork & Collaboration
-    #percentage: 90
-    color: '#edc948'
-
-  - type: soft-skill-indicator
-    name: Continuous Learning
-    #percentage: 85
-    color: '#76b7b2'
+    name: Infrastructure as Code
+    color: '#59a14f'

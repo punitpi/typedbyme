@@ -1,166 +1,157 @@
 # typedbyme
 
-> Personal portfolio website built with Hugo and the Toha theme
+Personal portfolio and blog — [typedbyme.puneeth.io](https://typedbyme.puneeth.io/)
 
 [![Hugo](https://img.shields.io/badge/Hugo-0.148+-blue.svg)](https://gohugo.io)
-[![Theme](https://img.shields.io/badge/Theme-Toha-green.svg)](https://github.com/hugo-toha/toha)
-[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc/4.0/)
+[![Theme](https://img.shields.io/badge/Theme-Toha_v4-green.svg)](https://github.com/hugo-toha/toha)
 
-## 🌐 Live Site
+---
 
-Visit my portfolio at: [typedbyme.puneeth.io](https://typedbyme.puneeth.io/)
+## What this is
 
-## 🚀 About
+This is the source for my personal portfolio and blog. Built with Hugo and the Toha v4 theme. It includes my work experience, skills, projects, accomplishments, and technical blog posts.
 
-This is my personal portfolio website showcasing my experience as a software developer with 7+ years in:
-- **Languages**: C#, Node.js, JavaScript, Python
-- **Cloud**: AWS, Azure
-- **Databases**: SQL Server, MongoDB, MySQL, DynamoDB, Redis
-- **DevOps**: Docker, Kubernetes, CI/CD
-- **Architecture**: Microservices, API Development
+Live at: [typedbyme.puneeth.io](https://typedbyme.puneeth.io/)
 
-## 🛠️ Built With
+---
 
-- **[Hugo](https://gohugo.io/)** - Static site generator
-- **[Toha Theme](https://github.com/hugo-toha/toha)** - Modern portfolio theme
-- **Hugo Modules** - For theme management
-- **GitHub Actions** - For automated deployment (if applicable)
+## Prerequisites
 
-## 🏗️ Local Development
-
-### Prerequisites
-
-- [Hugo Extended](https://gohugo.io/installation/) (v0.148.0+)
+- [Hugo Extended](https://gohugo.io/installation/) v0.148+
 - [Node.js](https://nodejs.org/) (for theme dependencies)
 - [Go](https://golang.org/) (for Hugo modules)
 
-### Setup
+---
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/punitpi/typedbyme.git
-   cd typedbyme
-   ```
+## Running locally
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   hugo mod get -u
-   ```
+```bash
+# Clone the repo
+git clone https://github.com/punitpi/typedbyme.git
+cd typedbyme
 
-3. **Start development server**
-   ```bash
-   hugo server -D
-   ```
+# Install dependencies
+npm install
+hugo mod get -u
 
-4. **Open in browser**
-   Navigate to `http://localhost:1313`
+# Start the dev server
+hugo server
+```
 
-### Building for Production
+Open [http://localhost:1313](http://localhost:1313) in your browser. The site hot-reloads on any file change.
+
+## Production build
 
 ```bash
 hugo --minify
 ```
 
-The generated site will be in the `public/` directory.
-
-## 📁 Project Structure
-
-```
-typedbyme/
-├── assets/                 # Theme assets and images
-│   └── images/
-│       └── author/         # Profile images
-├── content/                # Blog posts and content
-├── data/                   # Site configuration data
-│   └── en/
-│       ├── author.yaml     # Personal information
-│       └── about.yaml      # About section data
-├── static/                 # Static files
-├── hugo.yml               # Hugo configuration
-├── package.json           # Node.js dependencies
-└── go.mod                 # Hugo modules
-```
-
-## ⚙️ Configuration
-
-### Personal Information
-
-Edit `data/en/author.yaml` to update:
-- Personal details
-- Contact information
-- Professional summary
-
-### About Section
-
-Edit `data/en/about.yaml` to update:
-- Skills and expertise
-- Certifications
-- Social links
-
-### Site Settings
-
-Edit `hugo.yml` for:
-- Site metadata
-- Theme configuration
-- Module settings
-
-## 🎨 Customization
-
-The Toha theme offers extensive customization options:
-
-- **Colors & Styling**: Modify theme variables
-- **Sections**: Enable/disable portfolio sections
-- **Content**: Add blog posts, projects, experiences
-- **Analytics**: Configure tracking (Google Analytics, etc.)
-
-Refer to the [Toha documentation](https://toha-guides.netlify.app/) for detailed customization options.
-
-## 📝 Adding Content
-
-### Blog Posts
-```bash
-hugo new posts/my-new-post.md
-```
-
-### Projects
-Add project data in `data/en/sections/projects.yaml`
-
-### Experience
-Add experience data in `data/en/sections/experiences.yaml`
-
-## 🚀 Deployment
-
-This site can be deployed to various platforms:
-
-- **Netlify**: Connect your Git repository
-- **Vercel**: Import from GitHub
-- **GitHub Pages**: Use GitHub Actions
-- **AWS S3/CloudFront**: Upload `public/` directory
-
-## 🤝 Contributing
-
-While this is a personal portfolio, you're welcome to:
-- Report bugs or issues
-- Suggest improvements
-- Use as inspiration for your own portfolio
-
-Please note: Personal content (images, resume, contact info) is not available for reuse.
-
-## 📄 License
-
-This project is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International License](LICENSE).
-
-- ✅ **Code & Structure**: Free to use with attribution
-- ❌ **Personal Content**: Requires explicit permission
-
-## 📬 Contact
-
-- **Website**: [typedbyme.puneeth.io](https://typedbyme.puneeth.io/)
-- **Email**: [contact@puneeth.io](mailto:contact@puneeth.io)
-- **GitHub**: [@punitpi](https://github.com/punitpi)
-- **LinkedIn**: [ppuneeth](https://www.linkedin.com/in/ppuneeth/)
+Output goes to `public/`. That directory is what gets deployed.
 
 ---
 
-⭐ If you found this useful, please consider giving it a star!
+## Project structure
+
+```
+typedbyme/
+├── hugo.yml                        # Main config — baseURL, theme, analytics, features
+├── content/
+│   └── posts/                      # Blog posts in markdown
+├── data/en/
+│   ├── author.yaml                 # Name, greeting, contact, hero summary bullets
+│   └── sections/
+│       ├── about.yaml              # Designation, company, summary, badges, social links
+│       ├── skills.yaml             # Skill cards with descriptions
+│       ├── experiences.yaml        # Work history
+│       ├── education.yaml          # Education
+│       ├── projects.yaml           # Projects (personal + professional)
+│       ├── accomplishments.yaml    # Certifications and awards
+│       ├── featured-posts.yaml     # Which posts appear in the featured section
+│       └── recent-posts.yaml       # Recent posts config
+├── assets/
+│   └── styles/override.scss        # Custom CSS (minimal — removes hero background blur)
+├── layouts/partials/head/
+│   └── custom.html                 # Favicon configuration
+├── static/
+│   ├── files/Resume.pdf            # Downloadable resume
+│   └── favicon*                    # Favicon variants
+└── images/author/puneeth.png       # Profile photo
+```
+
+---
+
+## How to update content
+
+All portfolio data is in YAML files under `data/en/sections/`. Edit the relevant file directly.
+
+| What to update | File |
+|---|---|
+| Name, contact, hero summary | `data/en/author.yaml` |
+| Designation, company, about summary | `data/en/sections/about.yaml` |
+| Skills | `data/en/sections/skills.yaml` |
+| Work experience | `data/en/sections/experiences.yaml` |
+| Projects | `data/en/sections/projects.yaml` |
+| Certifications / awards | `data/en/sections/accomplishments.yaml` |
+| Featured blog posts | `data/en/sections/featured-posts.yaml` |
+| Resume PDF | `static/files/Resume.pdf` |
+| Site config | `hugo.yml` |
+
+### Adding a blog post
+
+Create a new markdown file under `content/posts/`:
+
+```yaml
+---
+title: 'Post Title'
+date: YYYY-MM-DDTHH:MM:SS+01:00
+draft: false
+author: 'Puneeth Prakash'
+description: 'Short description for SEO'
+tags: ['Tag1', 'Tag2']
+categories: ['Category Name']
+toc:
+  enable: true
+menu:
+  sidebar:
+    name: 'Short Name'
+    identifier: 'unique-slug'
+    weight: 500
+---
+```
+
+To feature a post on the home page, add its slug to `data/en/sections/featured-posts.yaml`.
+
+---
+
+## Deployment
+
+The site can be deployed anywhere that serves static files:
+
+- **Netlify** — connect the GitHub repo, set build command to `hugo --minify`, publish dir to `public`
+- **Vercel** — import from GitHub, same build settings
+- **GitHub Pages** — use a GitHub Actions workflow to build and push `public/` to `gh-pages`
+- **AWS S3 + CloudFront** — upload the `public/` directory after building
+
+---
+
+## Customisation
+
+- **Sections**: Enable or disable portfolio sections in `hugo.yml` under `features`
+- **Analytics**: GoatCounter is configured in `hugo.yml` — swap the code for your own
+- **Dark mode**: Enabled by default using DarkReader, defaults to system preference
+- **CSS**: Add overrides in `assets/styles/override.scss`
+- **Theme docs**: [toha-guides.netlify.app](https://toha-guides.netlify.app/)
+
+---
+
+## License
+
+Code and structure: [Creative Commons Attribution-NonCommercial 4.0](LICENSE) — free to use with attribution.
+
+Personal content (profile photo, resume, blog posts, personal data): not available for reuse without permission.
+
+---
+
+## Contact
+
+[contact@puneeth.io](mailto:contact@puneeth.io) | [typedbyme.puneeth.io](https://typedbyme.puneeth.io/)
