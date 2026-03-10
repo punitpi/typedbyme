@@ -7,6 +7,7 @@
 - **Framework:** Hugo (v0.148+) with the Toha v4 theme via Hugo Modules
 - **Repo:** https://github.com/punitpi/typedbyme
 - **Analytics:** GoatCounter (code: builder023)
+- **Spotify Now Playing:** API proxy at `spotify.api.puneeth.io`
 
 ---
 
@@ -59,7 +60,7 @@ typedbyme/
 │   └── recent-posts.yaml       # 4 recent posts, sorted by date desc
 ├── assets/styles/override.scss # Minimal SCSS: removes background filter on hero
 ├── layouts/partials/head/
-│   └── custom.html             # Custom favicon configuration
+│   └── custom.html             # Favicon config + Spotify Now Playing bar (style + script)
 ├── static/
 │   ├── files/Resume.pdf        # Downloadable resume
 │   └── favicon*                # Multiple favicon sizes
@@ -335,7 +336,7 @@ features:
 ## Customizations
 
 - **`assets/styles/override.scss`** — Removes background-filter blur on the home page hero section.
-- **`layouts/partials/head/custom.html`** — Apple touch icon and multiple favicon PNG sizes.
+- **`layouts/partials/head/custom.html`** — Apple touch icon, multiple favicon PNG sizes, and the Spotify Now Playing bar (inline CSS + JS).
 - Skills section has **no percentage bars** (removed in `7af85b0`); each skill has a text summary instead.
 - Comments section was **added then removed** (`0dcc4dd` → `c1d123d`) — currently disabled.
 
@@ -355,6 +356,34 @@ features:
 | Update resume PDF | `static/files/Resume.pdf` |
 | Change site config | `hugo.yml` |
 | Custom CSS tweaks | `assets/styles/override.scss` |
+| Set Spotify Worker URL | `hugo.yml` → `params.spotifyWorkerUrl` |
+
+---
+
+## Spotify Now Playing
+
+A slim bar at the very top of each page shows what's currently playing on Spotify, with the Spotify icon, track name, and artist. Clicking it opens the track on Spotify.
+
+### Architecture
+
+```
+Browser → Hugo site (JS polls every 30s) → spotify.api.puneeth.io → Spotify API
+```
+
+- The bar is injected into `<body>` via JavaScript at runtime (no Hugo template changes needed).
+- The API proxy (hosted separately) handles OAuth token refresh and caches responses for 30 seconds.
+- The bar is hidden when nothing is playing or if the API is unreachable.
+
+### Configuration
+
+The API URL is set in `hugo.yml`:
+
+```yaml
+params:
+  spotifyWorkerUrl: "https://spotify.api.puneeth.io"
+```
+
+Set to `""` (empty string) to disable the bar entirely.
 
 ---
 

@@ -56,7 +56,7 @@ params:
   gitRepo: https://github.com/punitpi/typedbyme
 
   # Background image for home page
-  background: 'images/File 2.jpg'
+  background: 'images/edi4.png'
 
   # Features
   features:
@@ -110,3 +110,8 @@ params:
   author:
     name: Puneeth Prakash
     image: images/author/puneeth.png
+
+  # Spotify "Now Playing" bar
+  # Set this to the URL of your Spotify Now Playing API.
+  # Leave empty or remove to disable the bar.
+  spotifyWorkerUrl: "https://spotify.api.puneeth.io"
