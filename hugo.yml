@@ -112,7 +112,6 @@ params:
     image: images/author/puneeth.png
 
   # Spotify "Now Playing" bar
-  # Set this to your deployed Cloudflare Worker URL.
-  # See workers/spotify-now-playing/README.md for setup instructions.
+  # Set this to the URL of your Spotify Now Playing API.
   # Leave empty or remove to disable the bar.
   spotifyWorkerUrl: "https://spotify.api.puneeth.io"

@@ -7,7 +7,7 @@
 - **Framework:** Hugo (v0.148+) with the Toha v4 theme via Hugo Modules
 - **Repo:** https://github.com/punitpi/typedbyme
 - **Analytics:** GoatCounter (code: builder023)
-- **Spotify Now Playing:** Cloudflare Worker at `spotify.api.puneeth.io`
+- **Spotify Now Playing:** API proxy at `spotify.api.puneeth.io`
 
 ---
 
@@ -367,16 +367,16 @@ A slim bar at the very top of each page shows what's currently playing on Spotif
 ### Architecture
 
 ```
-Browser → Hugo site (JS polls every 30s) → Cloudflare Worker (spotify.api.puneeth.io) → Spotify API
+Browser → Hugo site (JS polls every 30s) → spotify.api.puneeth.io → Spotify API
 ```
 
 - The bar is injected into `<body>` via JavaScript at runtime (no Hugo template changes needed).
-- The Cloudflare Worker (hosted separately) handles OAuth token refresh and caches responses for 30 seconds.
-- The bar is hidden when nothing is playing or if the Worker is unreachable.
+- The API proxy (hosted separately) handles OAuth token refresh and caches responses for 30 seconds.
+- The bar is hidden when nothing is playing or if the API is unreachable.
 
 ### Configuration
 
-The Worker URL is set in `hugo.yml`:
+The API URL is set in `hugo.yml`:
 
 ```yaml
 params:
