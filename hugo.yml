@@ -110,3 +110,9 @@ params:
   author:
     name: Puneeth Prakash
     image: images/author/puneeth.png
+
+  # Spotify "Now Playing" bar
+  # Set this to your deployed Cloudflare Worker URL.
+  # See workers/spotify-now-playing/README.md for setup instructions.
+  # Leave empty or remove to disable the bar.
+  spotifyWorkerUrl: ""
