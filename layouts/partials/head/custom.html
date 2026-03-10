@@ -18,3 +18,152 @@
 />
 <link rel="manifest" href="/images/favicon/site.webmanifest" />
 <link rel="shortcut icon" href="/favicon.ico" />
+
+{{ with site.Params.spotifyWorkerUrl }}
+<meta name="spotify-worker-url" content="{{ . }}" />
+{{ end }}
+
+<style>
+  .spotify-bar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1200;
+    height: 40px;
+    background: #121212;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 16px;
+    font-family: inherit;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .spotify-bar.visible {
+    display: flex;
+    opacity: 1;
+  }
+  .spotify-bar__icon {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+  }
+  .spotify-bar__text {
+    color: #fff;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: min(480px, 70vw);
+  }
+  .spotify-bar__text a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .spotify-bar__text a:hover {
+    color: #1DB954;
+    text-decoration: underline;
+  }
+  .spotify-bar__track {
+    font-weight: 600;
+  }
+  .spotify-bar__artist {
+    color: #b3b3b3;
+    font-weight: 400;
+  }
+  body.spotify-bar-visible {
+    padding-top: 40px;
+  }
+</style>
+
+<script>
+  (function () {
+    var workerMeta = document.querySelector('meta[name="spotify-worker-url"]');
+    if (!workerMeta) return;
+    var WORKER_URL = workerMeta.getAttribute("content");
+    if (!WORKER_URL) return;
+
+    var bar = null;
+    var textEl = null;
+
+    function createBar() {
+      bar = document.createElement("div");
+      bar.className = "spotify-bar";
+      bar.setAttribute("role", "complementary");
+      bar.setAttribute("aria-label", "Now playing on Spotify");
+
+      // Spotify logo SVG (official green)
+      var icon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      icon.setAttribute("class", "spotify-bar__icon");
+      icon.setAttribute("viewBox", "0 0 24 24");
+      icon.setAttribute("fill", "#1DB954");
+      icon.setAttribute("aria-hidden", "true");
+      var path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      path.setAttribute("d", "M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z");
+      icon.appendChild(path);
+      bar.appendChild(icon);
+
+      textEl = document.createElement("div");
+      textEl.className = "spotify-bar__text";
+      bar.appendChild(textEl);
+
+      document.body.insertBefore(bar, document.body.firstChild);
+    }
+
+    function updateBar(data) {
+      if (!bar) createBar();
+
+      if (!data.isPlaying) {
+        bar.classList.remove("visible");
+        document.body.classList.remove("spotify-bar-visible");
+        return;
+      }
+
+      var link = document.createElement("a");
+      link.href = data.url || "#";
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+
+      var trackSpan = document.createElement("span");
+      trackSpan.className = "spotify-bar__track";
+      trackSpan.textContent = data.track;
+
+      var sep = document.createTextNode("\u00a0\u2014\u00a0");
+
+      var artistSpan = document.createElement("span");
+      artistSpan.className = "spotify-bar__artist";
+      artistSpan.textContent = data.artist;
+
+      link.appendChild(trackSpan);
+      link.appendChild(sep);
+      link.appendChild(artistSpan);
+
+      textEl.innerHTML = "";
+      textEl.appendChild(link);
+
+      bar.classList.add("visible");
+      document.body.classList.add("spotify-bar-visible");
+    }
+
+    function fetchNowPlaying() {
+      fetch(WORKER_URL, { cache: "no-store" })
+        .then(function (res) { return res.json(); })
+        .then(updateBar)
+        .catch(function () {
+          if (bar) {
+            bar.classList.remove("visible");
+            document.body.classList.remove("spotify-bar-visible");
+          }
+        });
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", fetchNowPlaying);
+    } else {
+      fetchNowPlaying();
+    }
+    setInterval(fetchNowPlaying, 30000);
+  })();
+</script>
