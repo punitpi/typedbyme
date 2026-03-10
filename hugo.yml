@@ -115,4 +115,4 @@ params:
   # Set this to your deployed Cloudflare Worker URL.
   # See workers/spotify-now-playing/README.md for setup instructions.
   # Leave empty or remove to disable the bar.
-  spotifyWorkerUrl: ""
+  spotifyWorkerUrl: "https://spotify.api.puneeth.io"

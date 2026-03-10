@@ -7,7 +7,7 @@
 - **Framework:** Hugo (v0.148+) with the Toha v4 theme via Hugo Modules
 - **Repo:** https://github.com/punitpi/typedbyme
 - **Analytics:** GoatCounter (code: builder023)
-- **Spotify Now Playing:** Cloudflare Worker proxy at `workers/spotify-now-playing/`
+- **Spotify Now Playing:** Cloudflare Worker at `spotify.api.puneeth.io`
 
 ---
 
@@ -64,13 +64,7 @@ typedbyme/
 ├── static/
 │   ├── files/Resume.pdf        # Downloadable resume
 │   └── favicon*                # Multiple favicon sizes
-├── images/author/puneeth.png   # Profile photo
-└── workers/
-    └── spotify-now-playing/    # Cloudflare Worker: Spotify Now Playing API proxy
-        ├── src/index.js        # Worker logic (token refresh, Spotify API, caching)
-        ├── wrangler.toml       # Worker config
-        ├── package.json        # Wrangler dev dependency
-        └── README.md           # Full setup guide (Spotify app, OAuth, deploy)
+└── images/author/puneeth.png   # Profile photo
 ```
 
 ---
@@ -343,7 +337,6 @@ features:
 
 - **`assets/styles/override.scss`** — Removes background-filter blur on the home page hero section.
 - **`layouts/partials/head/custom.html`** — Apple touch icon, multiple favicon PNG sizes, and the Spotify Now Playing bar (inline CSS + JS).
-- **`workers/spotify-now-playing/`** — Cloudflare Worker that proxies Spotify's "currently playing" API. Stores OAuth credentials as secrets. Returns `{ isPlaying, track, artist, url, albumArt }` JSON with 30s caching.
 - Skills section has **no percentage bars** (removed in `7af85b0`); each skill has a text summary instead.
 - Comments section was **added then removed** (`0dcc4dd` → `c1d123d`) — currently disabled.
 
@@ -364,8 +357,6 @@ features:
 | Change site config | `hugo.yml` |
 | Custom CSS tweaks | `assets/styles/override.scss` |
 | Set Spotify Worker URL | `hugo.yml` → `params.spotifyWorkerUrl` |
-| Deploy Spotify Worker | `cd workers/spotify-now-playing && npm run deploy` |
-| Update Spotify Worker code | `workers/spotify-now-playing/src/index.js` |
 
 ---
 
@@ -376,11 +367,11 @@ A slim bar at the very top of each page shows what's currently playing on Spotif
 ### Architecture
 
 ```
-Browser → Hugo site (JS polls every 30s) → Cloudflare Worker → Spotify API
+Browser → Hugo site (JS polls every 30s) → Cloudflare Worker (spotify.api.puneeth.io) → Spotify API
 ```
 
 - The bar is injected into `<body>` via JavaScript at runtime (no Hugo template changes needed).
-- The Cloudflare Worker handles OAuth token refresh and caches responses for 30 seconds.
+- The Cloudflare Worker (hosted separately) handles OAuth token refresh and caches responses for 30 seconds.
 - The bar is hidden when nothing is playing or if the Worker is unreachable.
 
 ### Configuration
@@ -389,29 +380,10 @@ The Worker URL is set in `hugo.yml`:
 
 ```yaml
 params:
-  spotifyWorkerUrl: "https://spotify-now-playing.<subdomain>.workers.dev"
+  spotifyWorkerUrl: "https://spotify.api.puneeth.io"
 ```
 
 Set to `""` (empty string) to disable the bar entirely.
-
-### Worker setup
-
-See `workers/spotify-now-playing/README.md` for the full guide. Summary:
-
-1. Create a Spotify Developer App, note client ID and secret
-2. Run one-time OAuth flow to get a refresh token
-3. `cd workers/spotify-now-playing && npm install`
-4. `npx wrangler secret put SPOTIFY_CLIENT_ID` (and CLIENT_SECRET, REFRESH_TOKEN)
-5. `npm run deploy`
-6. Set the resulting `.workers.dev` URL in `hugo.yml`
-
-### Moving the Worker to its own repo
-
-The Worker currently lives in `workers/` for convenience. To extract it:
-1. Copy `workers/spotify-now-playing/` contents to a new repo
-2. Re-run `wrangler secret put` for each secret in the new project
-3. Deploy from the new repo (Worker URL stays the same)
-4. Remove `workers/` from this repo
 
 ---
 
