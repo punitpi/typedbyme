@@ -28,8 +28,28 @@ projects:
     summary: Built a production-grade observability platform from scratch on Azure Kubernetes Service using the LGTM stack (Loki, Grafana, Tempo, Mimir). Covers metrics, logs, traces, and alerting. Azure infrastructure provisioned with Terraform and all components packaged into a custom umbrella Helm chart for repeatable deployments.
     tags: ['Kubernetes', 'Grafana', 'Helm', 'Terraform', 'Azure', 'Observability', 'DevOps']
 
+  - name: Homelab Infrastructure
+    role: Creator
+    timeline: '2024 - Present'
+    repo: https://github.com/punitpi/homelab
+    summary: Infrastructure-as-code for a reproducible, resilient personal homelab. Local-first architecture on Raspberry Pi with automated deployment via Ansible and Docker Compose. Features Traefik reverse proxy, Authentik SSO, Tailscale mesh networking, and automated Restic backups to Backblaze B2. Runs services like AdGuard Home, FreshRSS, Mealie, and OpenWebUI.
+    tags: ['Docker', 'Ansible', 'Raspberry Pi', 'Tailscale', 'Self-Hosting', 'Infrastructure', 'Automation']
+
+  - name: TypedByMe Portfolio
+    role: Creator
+    timeline: '2024 - Present'
+    repo: https://github.com/punitpi/typedbyme
+    summary: Personal portfolio and technical blog built with Hugo and the Toha v4 theme. Features dark mode support, GoatCounter analytics, integrated Spotify Now Playing bar, and optimized static site generation. Content managed through YAML config files and markdown posts.
+    tags: ['Hugo', 'JavaScript', 'SCSS', 'Static Site', 'Portfolio', 'Blog']
+
+  - name: Spotify Now Playing API
+    role: Creator
+    timeline: '2024'
+    repo: https://github.com/punitpi/spotify-now-playing
+    summary: Lightweight proxy service for Spotify's Currently Playing API. Handles OAuth token refresh and exposes a simple JSON endpoint with track metadata. Deployable on Cloudflare Workers, Vercel or any other service. Includes CORS support and optional 30-second caching to avoid rate limits.
+    tags: ['JavaScript', 'Node.js', 'Cloudflare Workers', 'Spotify API', 'Docker']
+
   - name: My Express Template
-    # logo: /images/sections/projects/nodejs.png  # Add logo later
     role: Creator
     timeline: '2023'
     repo: https://github.com/punitpi/my-express-template

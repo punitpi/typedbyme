@@ -144,6 +144,12 @@ The site can be deployed anywhere that serves static files:
 
 ---
 
+## Credits
+
+Background image generated using [City Roads](https://github.com/anvaka/city-roads) by [@anvaka](https://github.com/anvaka) — a beautiful visualization tool that renders any city's road network as art.
+
+---
+
 ## License
 
 Code and structure: [Creative Commons Attribution-NonCommercial 4.0](LICENSE) — free to use with attribution.
