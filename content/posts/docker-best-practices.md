@@ -8,7 +8,7 @@ description: "Essential Docker best practices for building secure, efficient, an
 tags: ["Docker", "DevOps", "Containers", "Best Practices"]
 categories: ["Documentation & Guides"]
 
-# hero: images/posts/docker/hero.jpg
+hero: images/posts/docker-best-practices/hero.png
 
 toc:
   enable: true

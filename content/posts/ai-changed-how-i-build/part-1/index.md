@@ -8,7 +8,7 @@ description: 'How I used ChatGPT as a thinking partner to build LongLeavePlanner
 tags: ['AI', 'ChatGPT', 'Career', 'Learning', 'Node.js']
 categories: ['Career & Learning']
 
-hero: Rishekesh.JPG
+hero: images/posts/ai-changed-how-i-build-part-1/hero.jpg
 
 toc:
   enable: true

@@ -16,7 +16,7 @@ tags:
   ]
 categories: ['Web Development']
 
-# hero: images/posts/hugo-setup/hero.jpg
+hero: images/posts/building-your-portfolio-with-hugo/hero.png
 
 toc:
   enable: true
