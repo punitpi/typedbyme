@@ -5,16 +5,9 @@ section:
   enable: true
   weight: 7.5
   showOnNavbar: false
-  # Can optionally hide the title in sections
-  # hideTitle: true
 
-# Specify how many posts to show
-numFeaturedPosts: 3
-
-# Manually specify which posts to feature
-# These should match the file names in content/posts/ (without .md extension)
+# posts to feature
 posts:
-  - docker-best-practices
-  - homelab-setup-guide
-# Alternative: You can also let Hugo auto-select featured posts by adding this to post frontmatter:
-# featured: true
+  - posts/ai-changed-how-i-build/part-1
+  - posts/homelab-setup-guide
+  - posts/learning-in-public
