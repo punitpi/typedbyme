@@ -16,7 +16,7 @@ tags:
   ]
 categories: ['Web Development']
 
-hero: images/posts/building-your-portfolio-with-hugo/hero.png
+hero: images/posts/building-your-portfolio-with-hugo/hero.jpg
 
 toc:
   enable: true
@@ -342,7 +342,7 @@ params:
     title: 'Hi, I am Your Name'
     subtitle: 'I build things for the web'
     content: 'A passionate developer. I tend to make use of modern technologies to build websites and applications.'
-    image: /images/hero.png
+    image: /images/hero.jpg
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
@@ -953,7 +953,7 @@ params:
     title: 'Your Name'
     subtitle: 'I build things for the web'
     content: 'A passionate developer focused on creating impactful digital experiences.'
-    image: /images/hero.png
+    image: /images/hero.jpg
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
@@ -1016,7 +1016,7 @@ content/
     └── my-post.md
 static/
 └── images/
-    ├── hero.png
+    ├── hero.jpg
     ├── me.png
     └── projects/
 ```

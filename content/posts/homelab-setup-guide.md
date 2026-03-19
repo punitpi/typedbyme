@@ -8,7 +8,7 @@ description: 'My experience setting up a homelab for learning, experimentation, 
 tags: ['Homelab', 'Self-Hosting', 'Infrastructure', 'Learning']
 categories: ['Life & Processes']
 
-hero: images/posts/homelab-setup-guide/hero.png
+hero: images/posts/homelab-setup-guide/hero.jpg
 
 toc:
   enable: true

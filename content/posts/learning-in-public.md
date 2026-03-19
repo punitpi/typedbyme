@@ -8,7 +8,7 @@ description: 'Why sharing your learning journey publicly can accelerate your gro
 tags: ['Learning', 'Career', 'Professional Development', 'Blogging']
 categories: ['Career & Learning']
 
-hero: images/posts/learning-in-public/hero.png
+hero: images/posts/learning-in-public/hero.jpg
 
 toc:
   enable: true
