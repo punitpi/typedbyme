@@ -1,5 +1,10 @@
 <!-- Favicon is handled by Hugo theme config in hugo.yml -->
 
+{{ if .Params.hero }}
+<meta property="og:image" content="{{ .Params.hero | absURL }}" />
+<meta name="twitter:image" content="{{ .Params.hero | absURL }}" />
+{{ end }}
+
 {{ with site.Params.spotifyWorkerUrl }}
 <meta name="spotify-worker-url" content="{{ . }}" />
 {{ end }}

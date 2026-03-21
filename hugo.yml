@@ -69,6 +69,13 @@ params:
     # Enable blog posts
     blog:
       enable: true
+      shareButtons:
+        facebook: true
+        twitter: true
+        linkedIn: true
+        reddit: true
+        whatsapp: true
+        email: true
 
     # Enable notes section
     notes:
