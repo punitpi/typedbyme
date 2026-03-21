@@ -127,6 +127,16 @@ This is Part 1 of a three-part series. **Part 2 goes deeper.** By the time I'm w
 
 ---
 
+**P.S.** There's a certain irony to this post that I feel obliged to acknowledge. LongLeavePlanner, the project that started all of this, has since been completely rebuilt. Not tweaked. Rebuilt. The Node.js, Express, and FullCalendar stack described above is now sitting on a `backup/main` branch, preserved like a very small fossil.
+
+The new version is Next.js 14 with the App Router, TypeScript, Tailwind CSS, proper test coverage with Vitest, server-side caching, rate limiting, and deployment on Vercel with analytics. It's the kind of project I'd have taken weeks to scope and plan before. This time, it happened faster and with far more confidence because of the workflow I describe in Parts 2 and 3 of this series.
+
+So the project that taught me AI could be a better thinking partner has now become a showcase of exactly how that thinking evolved. I find that genuinely funny. Past me, sitting in that cafe in Rishikesh with cold chai and a half-working FullCalendar integration, would not have predicted it.
+
+The old code is still there if you're curious. Consider it a before photo.
+
+---
+
 ## Resources
 
 - [LongLeavePlanner on GitHub](https://github.com/punitpi/longleaveplanner)
