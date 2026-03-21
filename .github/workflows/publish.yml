@@ -24,10 +24,10 @@ jobs:
           submodules: recursive
 
       - name: Setup Hugo
-        uses: hugo-actions/setup-hugo@v1
+        uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest'
-          extended: true
+          hugo-version: 'latest'     
+          extended: true           
 
       - name: Update Hugo Modules
         run: hugo mod tidy
@@ -35,7 +35,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version: 20      
 
       - name: Install theme npm deps (from hugo mod)
         run: |
