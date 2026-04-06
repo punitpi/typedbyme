@@ -8,6 +8,8 @@ description: 'From a single Copilot tab to a full pipeline of orchestrated agent
 tags: ['AI', 'GitHub Copilot', 'Career', 'Learning', 'Productivity']
 categories: ['Career & Learning']
 
+hero: images/posts/ai-changed-how-i-build-part-2/hero.jpg
+
 toc:
   enable: true
 
