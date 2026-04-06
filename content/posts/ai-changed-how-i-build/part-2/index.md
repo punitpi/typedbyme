@@ -1,7 +1,7 @@
 ---
 title: "I Didn't Plan to Use This Many AI Tools. Here's How It Happened."
 date: 2026-03-20T09:00:00+01:00
-draft: true
+draft: false
 author: 'Puneeth Prakash'
 description: 'From a single Copilot tab to a full pipeline of orchestrated agents. How my AI workflow grew one step at a time, without me really planning it.'
 
@@ -91,17 +91,17 @@ That said, I still make the calls. The agents surface things, flag issues, produ
 
 I want to trace this journey through three real things I built, because the abstract description of "the workflow evolved" doesn't quite convey what actually changed.
 
-### Project 1: my-express-template
+### Project 1: [my-express-template](https://github.com/punitpi/my-express-template)
 
-This one I built the old-fashioned way. Every line of code written by hand, no AI assistance during the build itself. This is what I would have called "normal" two years ago.
+This one I built the old-fashioned way, about five years ago. Every line of code written by hand, no AI anywhere near it. This is what I would have called "normal" back then.
+
+I was creating a lot of projects at the time and kept setting up the same Express scaffolding from scratch. So I built a boilerplate to stop repeating myself.
 
 The thing about building a boilerplate is that the hard part isn't the code. It's the decisions. What goes in by default? How opinionated should it be? If I clone this in a year, will it be a helpful starting point or an annoying set of assumptions I have to unpick?
 
-I had a long conversation with ChatGPT before I wrote anything. Not "write me an Express template," but: "What does a production-ready Express starter actually need? What am I probably going to forget to include?" The conversation covered logging library choices, middleware ordering, where to draw the line between sensible defaults and constraints that only make sense for specific projects. Async error handling in Express 5 came up, and I almost definitely would have shipped without handling that correctly.
+I figured it out by doing. Made my own calls, got some of them wrong, iterated. The result is a template I've actually used as the foundation for other projects since. No AI involved, no shortcuts. Just me thinking through what I'd want every time I started something new.
 
-I made my own calls on several things. The conversation didn't dictate the template. But it got me explicit about decisions I'd otherwise have made half-consciously. The result is cleaner than anything I'd have built by just diving in, and it's been the foundation for other projects since. The AI helped me think. The code is all mine.
-
-### Project 2: Scotland Yard Tracker
+### Project 2: [Scotland Yard Tracker](https://github.com/punitpi/scotland-yard-tracker)
 
 [Scotland Yard Tracker](https://github.com/punitpi/scotland-yard-tracker) is a full-stack app for tracking Mr. X's movements in the board game Scotland Yard in real time. React frontend, Node.js and Express backend, MongoDB, Socket.IO for live sync across all connected devices.
 
@@ -115,7 +115,7 @@ Then I brought in Claude Code to improve it further: cleaning up the architectur
 
 The finished version is much better than anything I'd have shipped on my own in the same amount of time. But the story of how it got there is also a map of how my workflow changed.
 
-### Project 3: Spotify Now Playing
+### Project 3: [Spotify Now Playing](https://github.com/punitpi/spotify-now-playing)
 
 [Spotify Now Playing](https://github.com/punitpi/spotify-now-playing) is a lightweight proxy service that connects to Spotify's API and exposes your currently playing track as a simple JSON endpoint. I added it to this site recently, and if you look at the top of any page, you can see it working.
 
@@ -131,7 +131,7 @@ I've had it produce code that looked clean on first read and had a subtle bug th
 
 The skill here isn't just using the tools. It's knowing when to trust them and when to push back. That requires enough domain knowledge to evaluate what you're getting. A senior engineer using agent mode is a different thing from a junior engineer using agent mode, and not just because the output gets filtered more carefully. The direction-setting is different too.
 
-There are also tasks where closing the chat window and thinking quietly is the right move. Not every problem benefits from a conversation. Some just need you.
+There are also tasks where closing the chat window/terminal and thinking quietly is the right move. Not every problem benefits from a conversation. Some just need you.
 
 ## What Actually Shifted
 
@@ -143,7 +143,7 @@ Each of those steps changed how I work, not just how fast I work. The questions 
 
 I don't think that's a bad thing. But it's worth being clear-eyed about. The craft isn't gone. The judgment is still yours. The accountability is still yours. What's changed is the leverage.
 
-## Conclusion
+## TL;DR
 
 The shift from Part 1 to here isn't just more tools. It's a different relationship with what building something means.
 
