@@ -8,6 +8,8 @@ description: 'A step-by-step guide to registering for ID Austria as a foreign ci
 tags: ['Austria', 'ID Austria', 'Guides', 'Immigration']
 categories: ['Documentation & Guides']
 
+hero: images/posts/id-austria/hero.jpeg
+
 toc:
   enable: true
 
