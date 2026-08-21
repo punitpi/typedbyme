@@ -21,9 +21,24 @@ menu:
 
 **Audience:** Non-EEA driving licence holders living in Austria who want to exchange their existing licence for an Austrian one instead of starting from zero. I went through this with an Indian driving licence in Vorarlberg (Bregenz), but the phases should look similar wherever you are, since the process runs through your local **Bezirkshauptmannschaft (BH)**.
 
+## TL;DR
+
+This turned into a story more than a checklist, so here's the short version if you just want the facts:
+
+- **Get the licence translation and medical exam done before booking the BH appointment.** Both are required documents for it.
+- **Find a doctor yourself** (online search or word of mouth) and book by calling them directly. There's no central booking system for this.
+- **Medical exam cost:** 35 euros, paid at the doctor's office.
+- **BH exchange appointment** ([book here](https://www.bh-termine-reservieren.at/bregenz/)) needs: passport, residence permit, foreign driving licence, translation of the licence, a passport photo, and the medical report. Listed cost is 90 euros, but it wasn't actually collected. I was told to pay it at the driving school after the test.
+- **Check-in at the BH** is a kiosk that scans the QR code from your confirmation email and prints a slip with a number. Wait for that number on the display, then go to the counter shown.
+- At the BH appointment, they take your original foreign licence and send it to the police, then to Vienna, for verification. You get a call back once that's done.
+- **You do get your original licence back**, at least in my case, once verification was complete.
+- **Driving school (Frener Bregenz) package:** 2 classes + driving test for 564 euros, 300 euros advance to book, 80 euros per extra class if the trainer thinks you need it.
+- **Total spent so far:** roughly 35 + 564 = 599 euros, with the 90 euro BH fee still to come, plus any extra driving classes.
+- I'm currently waiting on Frener to reach out (they said WhatsApp) to confirm lesson dates, since they're booked out until October.
+
 ## Introduction
 
-I assumed swapping a driving licence would be a single trip to an office with some paperwork. It is not. It is a process that stretches across months, involves a doctor checking whether you can touch your own nose with your eyes closed, and ends (eventually) with actual driving lessons in a country where you've already been driving for years.
+I assumed swapping a driving licence would be a single trip to an office with some paperwork. It is not. It is a process that stretches across months, involves a doctor checking whether you can touch your own nose with your eyes closed, and ends (eventually) with actual driving lessons. I've been driving for years back in India, but on Indian roads with an Indian licence I can only legally drive here in Austria for the first six months, so this exchange is what lets me keep driving after that.
 
 I'm writing this while I'm still in it. The last phase, the practical test, hasn't happened yet. But everything up to booking the driving school is done, so here's the process broken into phases, in the order I went through them.
 
@@ -33,15 +48,7 @@ I'm writing this while I'm still in it. The last phase, the practical test, hasn
 
 Before you can even think about the BH appointment, you need a **medical report** (Ärztliches Gutachten), and that means booking a doctor first.
 
-I booked mine through the BH-Bregenz customer service appointment system. The booking form asks for the basics:
-
-- Salutation, first name, surname
-- Email (entered twice, to confirm)
-- Phone number (mobile is optional)
-- Address (road, house number, postal code, place of residence, all optional)
-- Consent to have your data processed for the appointment
-
-Once submitted, you get a confirmation with a date and time. I also got a reminder email the day before, which was a nice touch since it's easy to forget an appointment booked weeks in advance.
+There's no central portal for this. I found a doctor who does these exams through a mix of searching online and asking around, then booked the appointment the old-fashioned way: by calling them directly.
 
 ---
 
@@ -83,17 +90,19 @@ For this appointment, the listed requirements were:
 - Translation of the driver's licence (via ÖAMTC, an international driver's licence, or a court-sworn interpreter)
 - A passport-style photo (35mm x 45mm, portrait, meeting the [official photo criteria](https://www.oesterreich.gv.at/lexicon/P/Seite.991253.html))
 - A [medical report](https://www.oesterreich.gv.at/de/themen/persoenliche_dokumente_und_bestaetigungen/fuehrerschein/1/1/Seite.040720)
-- Cost: **90 euros**
+- Listed cost: **90 euros**
 
-The medical report from Phase 2 is exactly what feeds into this list, so the order matters: get the medical exam done first, then book this appointment.
+The medical report from Phase 2 is exactly what feeds into this list, so the order matters: get the medical exam and the licence translation done first, then book this appointment.
+
+Worth noting: the 90 euros is listed as the cost, but it wasn't actually collected at this appointment. When I asked about it, I was told I'd pay it later, at the driving school, after the practical test.
 
 ---
 
 ## Phase 4: The BH Appointment Itself
 
-I arrived about 30 minutes early, since I had no idea how check-in would work. At the entrance, I told them I was there for my driving licence appointment and scanned a QR code from the confirmation email I'd received a few days earlier (the same one that included a reminder the day before, again a small but useful detail).
+I arrived about 30 minutes early, since I had no idea how check-in would work. At the entrance, I told them I was there for my driving licence appointment. There's a kiosk machine that scans the QR code from the confirmation email (I'd received the email a few days earlier, plus a reminder the day before). The kiosk scans the code and prints out a slip with a number on it.
 
-After scanning, I waited for my number to appear on the display. That took about 15 minutes. Once it showed up, I went to the counter.
+I waited for that number to show up on the display, along with the counter I needed to go to. That took about 15 minutes. Once it showed up, I went to the counter.
 
 I asked the officer if she'd be comfortable speaking English since my German isn't strong yet, and she was happy to switch. She asked for all the documents from the list above, made copies of my passport and residence permit, and started the process.
 
@@ -105,15 +114,13 @@ She gave me a sheet to review, confirming all my details, and I had to sign it a
 
 She also told me I would **never get my original Indian licence back**, and recommended getting a replacement issued in India if I ever needed one there. Spoiler: that turned out not to be entirely accurate. More on that in a moment.
 
-No payment was collected at this appointment beyond what I'd already paid for the medical exam.
-
 ---
 
 ## Phase 5: Getting the Original Licence Back
 
 About a week later, I got a call from the BH. I went back, spoke to reception, got a token, and was called to a similar counter as before. This time, I got my **original Indian driving licence back**, which contradicted what I'd been told at the previous appointment. So if someone tells you that you'll never see your original licence again, take it with a grain of salt. It might still be handed back once verification is complete.
 
-She explained that all the relevant information had now been passed on to the driving school, and I just needed to go there, give my name, and book an appointment for lessons. Once I finish the class and pass the test, the driving school takes my licence, and I pay them directly, since the BH hadn't charged anything at this stage beyond the 90 euros from Phase 3.
+She explained that all the relevant information had now been passed on to the driving school, and I just needed to go there, give my name, and book an appointment for lessons. Once I finish the class and pass the test, the driving school takes my licence, and I settle up with them, which is also when the 90 euro BH fee from Phase 3 is due.
 
 ---
 
@@ -123,17 +130,17 @@ I went to **Frener Bregenz**, and they asked me to bring my passport to confirm 
 
 The package they offered was:
 
-- **2 classes + driving test**: 560 euros total
+- **2 classes + driving test**: 564 euros total
 - **Advance payment to book**: 300 euros
 - **Extra classes** (if the trainer thinks you need more before the test): 80 euros per class
 
-Whether I need those extra classes depends entirely on how the lessons go and what the trainer thinks. So the 560 euros is a floor, not necessarily the final number.
+Whether I need those extra classes depends entirely on how the lessons go and what the trainer thinks. So the 564 euros is a floor, not necessarily the final number. They also asked for my preferred time and dates for lessons, but were upfront that they're only available starting in October.
 
 ---
 
 ## Phase 7: What's Next
 
-This is where I am right now: attending lessons, waiting on the trainer's read of my driving, and working toward the practical test. Once that's done and I actually have the Austrian licence in hand, I'll come back and update this post with how the test itself went.
+I've paid the advance and I'm now just waiting for Frener to reach out, they said they'd contact me on WhatsApp to confirm lesson dates once a slot opens up in October. Once the lessons and the practical test are done and I actually have the Austrian licence in hand, I'll come back and update this post with how it went.
 
 ---
 
@@ -141,24 +148,17 @@ This is where I am right now: attending lessons, waiting on the trainer's read o
 
 A few things I'd tell someone starting this process from scratch:
 
-- **Do the medical exam first.** You need the report before you can even book the BH exchange appointment, so don't book the BH appointment until you have it.
+- **Get the licence translation and medical exam done before the BH appointment.** Both are required documents for it, so don't book the BH appointment until you have them.
 - **Ask for English if your German isn't strong.** Both at the medical exam and at the BH, staff were happy to accommodate English once asked.
 - **Bring everything, even if you think you won't need it.** The document list at the BH is not negotiable, translations included.
-- **Don't panic if they say you'll never get your original licence back.** In my case, I did get it back after the verification with Vienna was complete.
-- **Budget for the full chain of costs**, not just one appointment. Between the medical exam, the BH exchange fee, and the driving school package, I was already at roughly 685 euros before any extra lessons.
-- **This takes months, not weeks.** Between the medical appointment, the BH appointment, waiting for verification, and then booking driving lessons, expect the whole process to span a few months.
+- **Budget for the full chain of costs**, not just one appointment. Between the medical exam, the BH exchange fee, and the driving school package, I'm looking at roughly 689 euros before any extra lessons.
+- **This takes months, not weeks.** Between the medical appointment, the BH appointment, waiting for verification, and then booking driving lessons, expect the whole process to span several months.
 
 ---
 
 ## Conclusion
 
 Exchanging a non-EEA driving licence for an Austrian one is less a single errand and more a small project with its own phases, its own waiting periods, and its own bit of bureaucratic suspense. I'm not done yet, the practical test is still ahead of me, but the path to get there is clear now, and hopefully this saves you some of the guesswork I went through.
-
-### Your Next Steps
-
-1. **Book the medical exam first**: it's the document everything else depends on.
-2. **Gather your documents early**: passport, residence permit, foreign licence, translation, photo, and the medical report.
-3. **Book the BH exchange appointment** once you have all of the above ready.
 
 ---
 ## Resources
