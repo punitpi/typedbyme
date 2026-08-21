@@ -32,13 +32,13 @@ This turned into a story more than a checklist, so here's the short version if y
 - **Check-in at the BH** is a kiosk that scans the QR code from your confirmation email and prints a slip with a number. Wait for that number on the display, then go to the counter shown.
 - At the BH appointment, they take your original foreign licence and send it to the police, then to Vienna, for verification. You get a call back once that's done.
 - **You do get your original licence back**, at least in my case, once verification was complete.
-- **Driving school (Frener Bregenz) package:** 2 classes + driving test for 564 euros, 300 euros advance to book, 80 euros per extra class if the trainer thinks you need it.
-- **Total spent so far:** roughly 35 + 564 = 599 euros, with the 90 euro BH fee still to come, plus any extra driving classes.
+- **Driving school (Frener Bregenz) package:** 2 classes + driving test for 564 euros, 300 euros advance to book, 80 euros per extra class if the trainer thinks you need it. They have English-speaking trainers, just ask.
+- **Total spent so far:** 35 euros for the medical exam + 300 euros advance to the driving school = 335 euros. Still to come: the remaining 264 euros of the driving school package, the 90 euro BH fee, and any extra driving classes.
 - I'm currently waiting on Frener to reach out (they said WhatsApp) to confirm lesson dates, since they're booked out until October.
 
 ## Introduction
 
-I assumed swapping a driving licence would be a single trip to an office with some paperwork. It is not. It is a process that stretches across months, involves a doctor checking whether you can touch your own nose with your eyes closed, and ends (eventually) with actual driving lessons. I've been driving for years back in India, but on Indian roads with an Indian licence I can only legally drive here in Austria for the first six months, so this exchange is what lets me keep driving after that.
+I assumed swapping a driving licence would be a single trip to an office with some paperwork. It is not. It is a process that stretches across months, involves a doctor checking whether you can touch your own nose with your eyes closed, and ends (eventually) with actual driving lessons. I've been driving for years in India, but my Indian licence only lets me drive here in Austria for six months, so this exchange is what keeps me legally on the road after that.
 
 I'm writing this while I'm still in it. The last phase, the practical test, hasn't happened yet. But everything up to booking the driving school is done, so here's the process broken into phases, in the order I went through them.
 
@@ -120,13 +120,15 @@ She also told me I would **never get my original Indian licence back**, and reco
 
 About a week later, I got a call from the BH. I went back, spoke to reception, got a token, and was called to a similar counter as before. This time, I got my **original Indian driving licence back**, which contradicted what I'd been told at the previous appointment. So if someone tells you that you'll never see your original licence again, take it with a grain of salt. It might still be handed back once verification is complete.
 
-She explained that all the relevant information had now been passed on to the driving school, and I just needed to go there, give my name, and book an appointment for lessons. Once I finish the class and pass the test, the driving school takes my licence, and I settle up with them, which is also when the 90 euro BH fee from Phase 3 is due.
+She explained that all the relevant information had now been passed on to the driving school, and I just needed to go there, give my name, and book an appointment for lessons. Once I finish the class and pass the test, the driving school takes my licence, and that's also when I pay the 90 euro BH fee from Phase 3.
 
 ---
 
 ## Phase 6: Booking the Driving School
 
 I went to **Frener Bregenz**, and they asked me to bring my passport to confirm my identity before booking anything.
+
+Since my German isn't strong, I asked if they had English-speaking trainers. They said they had two, and asked if I'd prefer one of them. I said yes.
 
 The package they offered was:
 
