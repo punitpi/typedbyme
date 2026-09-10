@@ -21,12 +21,41 @@ section:
 
 # your projects
 projects:
-  - name: LGTM Observability Stack on Kubernetes
+  - name: dhaaga
+    role: Creator
+    timeline: '2026'
+    repo: https://github.com/punitpi/dhaaga
+    liveUrl: https://dhaaga.nayanamurthy.com
+    summary: Live website for a handmade crochet business, built with Next.js 16 and deployed on Vercel. Responsive single-page layout with a photo gallery and lightbox, OpenGraph metadata for social sharing, and Vercel Analytics. Content is managed through a single config object for easy updates.
+    tags: ['Next.js', 'TypeScript', 'Vercel', 'Web App']
+
+  - name: voiceScribe
+    role: Creator
+    timeline: '2025 - Present'
+    repo: https://github.com/punitpi/voiceScribe
+    summary: Full-stack voice transcription app with support for Kannada-English code-mixed audio. Authenticated multi-tenant access with an admin panel, a Bull/Redis job queue for async transcription with retry handling, a feature-flag system with per-user overrides, and analytics instrumentation for key user events. Dockerized frontend and backend.
+    tags: ['TypeScript', 'Node.js', 'Redis', 'Docker', 'Full-Stack']
+
+  - name: Long Leave Planner
+    role: Creator
+    timeline: '2026'
+    repo: https://github.com/punitpi/LongLeavePlanner
+    liveUrl: https://leavewise.puneeth.io
+    summary: Finds the best days to take off work by identifying clusters of public holidays and weekends, then highlighting exactly which days to request for an extended break. Supports country-based auto-loading of holidays or manual/CSV date input, with calendar visualization and PDF export/share.
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Web App']
+
+  - name: TripWeave
+    role: Creator
+    timeline: '2026'
+    summary: Collaborative, map-first trip planning app, currently in active development. Built with Next.js, Supabase, and Better Auth, with Google APIs integration for mapping and location data. Includes end-to-end test coverage with Playwright and Vitest.
+    tags: ['Next.js', 'TypeScript', 'Supabase', 'Full-Stack']
+
+  - name: Azure Terraform Modules
     role: Creator
     timeline: '2025'
-    # repo: https://github.com/punitpi/lgtm-observability  # Add once repo is created
-    summary: Built a production-grade observability platform from scratch on Azure Kubernetes Service using the LGTM stack (Loki, Grafana, Tempo, Mimir). Covers metrics, logs, traces, and alerting. Azure infrastructure provisioned with Terraform and all components packaged into a custom umbrella Helm chart for repeatable deployments.
-    tags: ['Kubernetes', 'Grafana', 'Helm', 'Terraform', 'Azure', 'Observability', 'DevOps']
+    repo: https://github.com/punitpi/tf-azure-template
+    summary: Modular, reusable Terraform configuration for provisioning Azure infrastructure, including resource groups, virtual networks, storage accounts, Key Vault, and App Service, with a remote state backend. Built to simplify and standardize Azure environment setup.
+    tags: ['Terraform', 'Azure', 'IaC']
 
   - name: Homelab Infrastructure
     role: Creator
@@ -55,17 +84,3 @@ projects:
     repo: https://github.com/punitpi/my-express-template
     summary: Standard Express.js template with custom configurations and best practices for rapid API development. Includes authentication, error handling, and logging setup.
     tags: ['JavaScript', 'Node.js', 'Express.js', 'Backend']
-
-  - name: Scotland Yard Tracker
-    role: Developer
-    timeline: '2022'
-    repo: https://github.com/punitpi/scotland-yard-tracker
-    summary: Web app to help players track Mr. X's movements and deduce possible locations during a Scotland Yard board game session.
-    tags: ['JavaScript', 'Web App']
-
-  - name: Adhoc Scripts
-    role: Creator
-    timeline: '2020 - Present'
-    repo: https://github.com/punitpi/adhoc-scripts
-    summary: A growing collection of shell scripts for automation, system administration, and development workflow tasks.
-    tags: ['Shell', 'Bash', 'Automation', 'DevOps']

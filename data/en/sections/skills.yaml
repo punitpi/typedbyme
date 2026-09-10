@@ -15,7 +15,7 @@ skills:
     summary: 'Build and secure delivery pipelines end to end, with security checks integrated at every stage rather than bolted on at the end. Tools: GitHub Actions, Jenkins, Harness, Ansible, SonarQube, Black Duck.'
 
   - name: Cloud Platforms
-    summary: 'Design and operate cloud infrastructure across AWS and Azure, from serverless functions to managed Kubernetes clusters. Infrastructure provisioned as code using Terraform and CloudFormation. AWS Certified Solutions Architect – Associate.'
+    summary: 'Design and operate cloud infrastructure across AWS and Azure, from serverless functions to managed Kubernetes clusters. Infrastructure provisioned as code using Terraform and CloudFormation. AWS Certified Solutions Architect – Associate (2022-2025).'
 
   - name: Containers & Orchestration
     summary: 'Run containerised workloads in production using Docker and Kubernetes, including building clusters from scratch with networking, storage, observability, and Helm-based deployment pipelines.'

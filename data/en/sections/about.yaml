@@ -18,7 +18,7 @@ company:
 resume: 'files/Resume.pdf'
 
 # a summary about you
-summary: 'Software developer with 8+ years of experience specialising in DevSecOps, cloud-native architecture, and microservices. Currently building secure, reliable engineering systems at OMICRON electronics in Austria. I work across C#, Node.js, AWS and Azure, automating CI/CD workflows, hardening pipelines, and designing APIs and infrastructure that scale. Passionate about security, self-hosting, and homelab. Outside work I enjoy homebrewing and backpacking.'
+summary: 'Software developer with 9+ years of experience specialising in DevSecOps, cloud-native architecture, and microservices. Currently building secure, reliable engineering systems at OMICRON electronics in Austria. I work across C#, Node.js, AWS and Azure, automating CI/CD workflows, hardening pipelines, and designing APIs and infrastructure that scale. Passionate about security, self-hosting, and homelab. Outside work I enjoy homebrewing and backpacking.'
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -39,7 +39,7 @@ socialLinks:
 # Replaced dummy certifications with relevant skill / focus indicators
 badges:
   - type: certification
-    name: AWS Certified Solutions Architect – Associate
+    name: AWS Certified Solutions Architect – Associate (Expired)
     url: 'https://www.credly.com/badges/a26c1fa7-0a42-41b2-8fc4-1639c0723f37/linked_in_profile'
     badge: 'https://images.credly.com/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png'
 
@@ -58,3 +58,7 @@ badges:
   - type: soft-skill-indicator
     name: Infrastructure as Code
     color: '#59a14f'
+
+  - type: soft-skill-indicator
+    name: EU Blue Card
+    color: '#76b7b2'
