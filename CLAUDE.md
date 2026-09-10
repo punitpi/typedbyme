@@ -19,7 +19,7 @@
 ## About Puneeth
 
 **DevSecOps Engineer / Software Engineer** at OMICRON electronics, based in Klaus, Vorarlberg, Austria.
-**8+ years** of experience. Contact: contact@puneeth.io | GitHub: @punitpi | LinkedIn: @ppuneeth
+**9+ years** of experience. Contact: contact@puneeth.io | GitHub: @punitpi | LinkedIn: @ppuneeth
 
 **Background:** DevSecOps, cloud-native microservices, AWS & Azure, CI/CD security automation, system reliability.
 **Interests:** Homebrewing, backpacking, self-hosting/homelab, cybersecurity.
@@ -337,6 +337,7 @@ features:
 
 - **`assets/styles/override.scss`** — Removes background-filter blur on the home page hero section.
 - **`layouts/partials/head/custom.html`** — Apple touch icon, multiple favicon PNG sizes, and the Spotify Now Playing bar (inline CSS + JS).
+- **`layouts/partials/cards/project.html`** — local override of the Toha theme's project card. The stock theme partial only renders one footer button (a GitHub star button if `repo` is set, which also wins the outer card click-through over `url`; otherwise a "Details" link if only `url` is set). This override adds a second button driven by a `liveUrl` field, so a project can show both a repo link and a live-site link.
 - Skills section has **no percentage bars** (removed in `7af85b0`); each skill has a text summary instead.
 - Comments section was **added then removed** (`0dcc4dd` → `c1d123d`) — currently disabled.
 
@@ -400,3 +401,7 @@ hugo --minify
 ```
 
 Dependencies require Node.js. Run `npm install` if node_modules is missing.
+
+- `.DS_Store` files land in new `assets/images/posts/<slug>/` folders when dragging images in via Finder — remove before staging: `find assets/images -name '.DS_Store' -delete`.
+- Toha theme source (for inspecting template partials, e.g. to check what fields a card/layout supports): `~/Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/hugo-toha/toha/v4@<version>/`.
+- If a PR is merged while its branch still has unpushed commits, pushing them afterward does **not** reopen the PR or add them to `main` — they're silently orphaned on the branch. Cherry-pick them onto a fresh branch off `main` and open a new PR.
