@@ -21,13 +21,26 @@ section:
 
 # your projects
 projects:
-  - name: dhaaga
+  - name: Spotify Now Playing API
+    role: Creator
+    timeline: '2024'
+    repo: https://github.com/punitpi/spotify-now-playing
+    summary: Lightweight proxy service for Spotify's Currently Playing API. Handles OAuth token refresh and exposes a simple JSON endpoint with track metadata. Deployable on Cloudflare Workers, Vercel or any other service. Includes CORS support and optional 30-second caching to avoid rate limits.
+    tags: ['JavaScript', 'Node.js', 'Cloudflare Workers', 'Spotify API', 'Docker']
+
+  - name: My Resume
     role: Creator
     timeline: '2026'
-    repo: https://github.com/punitpi/dhaaga
-    liveUrl: https://dhaaga.nayanamurthy.com
-    summary: Live website for a handmade crochet business, built with Next.js 16 and deployed on Vercel. Responsive single-page layout with a photo gallery and lightbox, OpenGraph metadata for social sharing, and Vercel Analytics. Content is managed through a single config object for easy updates.
-    tags: ['Next.js', 'TypeScript', 'Vercel', 'Web App']
+    repo: https://github.com/punitpi/my-resume
+    summary: ATS-friendly LaTeX resume built on the Awesome-CV class, the single source of truth for this site's resume link. Every push is compiled with XeLaTeX in CI, published as a GitHub Release, and synced into the portfolio automatically. Public and private (with phone number) variants are built from the same source, kept apart via a git-ignored, CI-injected secret file.
+    tags: ['LaTeX', 'GitHub Actions', 'CI/CD']
+
+  - name: TypedByMe Portfolio
+    role: Creator
+    timeline: '2024 - Present'
+    repo: https://github.com/punitpi/typedbyme
+    summary: Personal portfolio and technical blog built with Hugo and the Toha v4 theme. Features dark mode support, GoatCounter analytics, integrated Spotify Now Playing bar, and optimized static site generation. Content managed through YAML config files and markdown posts.
+    tags: ['Hugo', 'JavaScript', 'SCSS', 'Static Site', 'Portfolio', 'Blog']
 
   - name: voiceScribe
     role: Creator
@@ -35,6 +48,13 @@ projects:
     repo: https://github.com/punitpi/voiceScribe
     summary: Full-stack voice transcription app with support for Kannada-English code-mixed audio. Authenticated multi-tenant access with an admin panel, a Bull/Redis job queue for async transcription with retry handling, a feature-flag system with per-user overrides, and analytics instrumentation for key user events. Dockerized frontend and backend.
     tags: ['TypeScript', 'Node.js', 'Redis', 'Docker', 'Full-Stack']
+
+  - name: Homelab Infrastructure
+    role: Creator
+    timeline: '2024 - Present'
+    repo: https://github.com/punitpi/homelab
+    summary: Infrastructure-as-code for a reproducible, resilient personal homelab. Local-first architecture on Raspberry Pi with automated deployment via Ansible and Docker Compose. Features Traefik reverse proxy, Authentik SSO, Tailscale mesh networking, and automated Restic backups to Backblaze B2. Runs services like AdGuard Home, FreshRSS, Mealie, and OpenWebUI.
+    tags: ['Docker', 'Ansible', 'Raspberry Pi', 'Tailscale', 'Self-Hosting', 'Infrastructure', 'Automation']
 
   - name: Long Leave Planner
     role: Creator
@@ -57,30 +77,17 @@ projects:
     summary: Modular, reusable Terraform configuration for provisioning Azure infrastructure, including resource groups, virtual networks, storage accounts, Key Vault, and App Service, with a remote state backend. Built to simplify and standardize Azure environment setup.
     tags: ['Terraform', 'Azure', 'IaC']
 
-  - name: Homelab Infrastructure
-    role: Creator
-    timeline: '2024 - Present'
-    repo: https://github.com/punitpi/homelab
-    summary: Infrastructure-as-code for a reproducible, resilient personal homelab. Local-first architecture on Raspberry Pi with automated deployment via Ansible and Docker Compose. Features Traefik reverse proxy, Authentik SSO, Tailscale mesh networking, and automated Restic backups to Backblaze B2. Runs services like AdGuard Home, FreshRSS, Mealie, and OpenWebUI.
-    tags: ['Docker', 'Ansible', 'Raspberry Pi', 'Tailscale', 'Self-Hosting', 'Infrastructure', 'Automation']
-
-  - name: TypedByMe Portfolio
-    role: Creator
-    timeline: '2024 - Present'
-    repo: https://github.com/punitpi/typedbyme
-    summary: Personal portfolio and technical blog built with Hugo and the Toha v4 theme. Features dark mode support, GoatCounter analytics, integrated Spotify Now Playing bar, and optimized static site generation. Content managed through YAML config files and markdown posts.
-    tags: ['Hugo', 'JavaScript', 'SCSS', 'Static Site', 'Portfolio', 'Blog']
-
-  - name: Spotify Now Playing API
-    role: Creator
-    timeline: '2024'
-    repo: https://github.com/punitpi/spotify-now-playing
-    summary: Lightweight proxy service for Spotify's Currently Playing API. Handles OAuth token refresh and exposes a simple JSON endpoint with track metadata. Deployable on Cloudflare Workers, Vercel or any other service. Includes CORS support and optional 30-second caching to avoid rate limits.
-    tags: ['JavaScript', 'Node.js', 'Cloudflare Workers', 'Spotify API', 'Docker']
-
   - name: My Express Template
     role: Creator
     timeline: '2023'
     repo: https://github.com/punitpi/my-express-template
     summary: Standard Express.js template with custom configurations and best practices for rapid API development. Includes authentication, error handling, and logging setup.
     tags: ['JavaScript', 'Node.js', 'Express.js', 'Backend']
+
+  - name: dhaaga
+    role: Creator
+    timeline: '2026'
+    repo: https://github.com/punitpi/dhaaga
+    liveUrl: https://dhaaga.nayanamurthy.com
+    summary: Live website for a handmade crochet business, built with Next.js 16 and deployed on Vercel. Responsive single-page layout with a photo gallery and lightbox, OpenGraph metadata for social sharing, and Vercel Analytics. Content is managed through a single config object for easy updates.
+    tags: ['Next.js', 'TypeScript', 'Vercel', 'Web App']
