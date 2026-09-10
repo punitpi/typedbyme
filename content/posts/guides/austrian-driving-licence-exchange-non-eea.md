@@ -8,6 +8,8 @@ description: 'A phase-by-phase account of exchanging a non-EEA driving licence f
 tags: ['Austria', 'Driving Licence', 'Guides', 'Immigration', 'Vorarlberg']
 categories: ['Documentation & Guides']
 
+hero: images/posts/austrian-driving-licence-exchange-non-eea/hero.jpeg
+
 toc:
   enable: true
 

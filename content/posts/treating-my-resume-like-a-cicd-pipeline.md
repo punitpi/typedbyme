@@ -8,7 +8,7 @@ description: 'How years of failed attempts to learn LaTeX ended with a resume th
 tags: ['LaTeX', 'CI/CD', 'GitHub Actions', 'DevOps', 'Career', 'Open Source']
 categories: ['Career & Learning']
 
-# hero: images/posts/treating-my-resume-like-a-cicd-pipeline/hero.jpg
+hero: images/posts/treating-my-resume-like-a-cicd-pipeline/hero.jpeg
 
 toc:
   enable: true
