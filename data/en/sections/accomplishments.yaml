@@ -10,8 +10,8 @@ section:
 
 # Your accomplishments
 accomplishments:
-- name: AWS Certified Solutions Architect – Associate
-  timeline: "2023"
+- name: AWS Certified Solutions Architect – Associate (Expired)
+  timeline: "2022 - 2025"
   organization:
     name: Amazon Web Services
     url: https://aws.amazon.com/certification/

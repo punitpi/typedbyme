@@ -35,13 +35,12 @@ experiences:
         start: Feb 2021
         end: Oct 2025
         responsibilities:
-          - Architected and deployed cloud-native microservices using Node.js, AWS Lambda, and Kubernetes (EKS) to enhance system scalability and reduce operational costs
-          - Built secure middleware microservice on AWS Fargate ECS with OAuth2 authentication via Keycloak, processing 100K+ daily transactions with 99.9% uptime
-          - Designed reusable .NET Worker Services for event-driven backend operations, reducing code duplication by 60% across multiple projects
-          - Implemented end-to-end CI/CD pipelines using GitHub Actions, Harness, CloudFormation, and Terraform, cutting deployment time from hours to minutes
-          - Deployed and maintained production Kubernetes clusters on AWS EKS with Inlets Pro reverse proxy and automated TLS certificate management
-          - Developed Azure WebJobs for real-time webhook integration with Microsoft services, enabling seamless event synchronization across platforms
-          - Resolved penetration testing and SonarQube security vulnerabilities while achieving $1,000+ monthly AWS cost optimization
+          - Built a secure middleware microservice on AWS ECS Fargate (Node.js, Lambda, DynamoDB) with OAuth2 authentication via Keycloak, handling 100K+ transactions a day at 99.9% uptime
+          - Deployed and operated production Kubernetes clusters on AWS EKS, running Inlets Pro as a reverse-proxy exit server with cert-manager TLS and zero-touch deployment
+          - Implemented end-to-end CI/CD on GitHub Actions and Harness with infrastructure defined in CloudFormation and Terraform, removing about 80% of manual release work
+          - Designed reusable .NET Worker Service templates for event-driven backends (logging, encryption, database access) that cut duplicated code by 60% across projects; built Azure WebJobs webhook endpoints for real-time integration with Microsoft services
+          - Fixed penetration-test and SonarQube findings across services and cut AWS spend by $1,000+ per month through right-sizing, reserved instances, and automated shutdown of idle resources
+          - Ran internal training sessions on AWS and DevOps practices for the engineering team
       - designation: Software Engineer
         start: Mar 2018
         end: Feb 2021
