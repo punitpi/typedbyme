@@ -20,6 +20,19 @@ menu:
     weight: 495
 ---
 
+## TL;DR
+
+This is a decade-long story more than a how-to, so if you just want the setup, [skip straight to how it actually works](#how-it-actually-works). Otherwise, here's the short version:
+
+- I failed to learn LaTeX for close to a decade, every attempt died from trying to master it end to end before writing a single line.
+- I used Novoresume, then RxResume (open source), for every resume until now, and both got the job done.
+- Watching my wife fight a paid resume builder, then losing track of my own current resume, is what actually pushed me to fix this.
+- `my-resume` treats a resume like RaC, resume as code: a push to `main` compiles it with XeLaTeX, publishes it as a GitHub release, and syncs the PDF into this site automatically.
+- A separate private build adds my phone number, kept out of anything public by construction, not by remembering to redact it.
+- I built the same setup for my wife, producing an English and a German version instead of a public and private one.
+
+## The Long Version
+
 After 12th, I wrote CET (Common Entrance Test) and got into an engineering college for Computer Science. Before classes started, I went to see a relative for some life advice, the kind of relative who felt more like an elder brother than a distant name at family functions. He was already a software engineer, and he sat me down and gave me a short list of things to learn. SQL made sense. A programming language made sense. Then he told me to learn LaTeX, and to this day I have no idea why that one came up. But out of everything he said that day, LaTeX is the one that stuck with me the hardest.
 
 That one piece of advice followed me around for close to a decade. And for most of that decade, I failed at it.
