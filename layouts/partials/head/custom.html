@@ -1,7 +1,7 @@
 <!-- Favicon is handled by Hugo theme config in hugo.yml -->
+<!-- og:image is handled by layouts/partials/opengraph.html (single source of truth) -->
 
 {{ if .Params.hero }}
-<meta property="og:image" content="{{ .Params.hero | absURL }}" />
 <meta name="twitter:image" content="{{ .Params.hero | absURL }}" />
 {{ end }}
 
