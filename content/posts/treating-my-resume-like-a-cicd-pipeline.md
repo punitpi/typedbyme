@@ -20,7 +20,7 @@ menu:
     weight: 495
 ---
 
-After 12th, I wrote CET and got into an engineering college for Computer Science. Before classes started, I went to see a relative for some life advice, the kind of relative who felt more like an elder brother than a distant name at family functions. He was already a software engineer, and he sat me down and gave me a short list of things to learn. SQL made sense. A programming language made sense. Then he told me to learn LaTeX, and to this day I have no idea why that one came up. But out of everything he said that day, LaTeX is the one that stuck with me the hardest.
+After 12th, I wrote CET (Common Entrance Test) and got into an engineering college for Computer Science. Before classes started, I went to see a relative for some life advice, the kind of relative who felt more like an elder brother than a distant name at family functions. He was already a software engineer, and he sat me down and gave me a short list of things to learn. SQL made sense. A programming language made sense. Then he told me to learn LaTeX, and to this day I have no idea why that one came up. But out of everything he said that day, LaTeX is the one that stuck with me the hardest.
 
 That one piece of advice followed me around for close to a decade. And for most of that decade, I failed at it.
 
@@ -28,7 +28,7 @@ That one piece of advice followed me around for close to a decade. And for most 
 
 Here's the thing about learning LaTeX (a typesetting system people use to produce documents that look like they came out of an academic journal, resumes included): it's not actually that hard. What was hard was how I kept trying to learn it.
 
-Past me tried to learn LaTeX the way you're supposed to learn a language you'll never actually speak: cover to cover, grammar first. Every attempt started the same way. Open a tutorial, decide I was going to understand the entire package ecosystem before writing a single line, and quietly give up two days later. I tried during engineering. I tried again a few years into my career at Samsung, right when I was preparing to move to OneAdvanced. Same pattern, same outcome. Zero to expert on day one isn't how anyone learns anything, and LaTeX was no exception.
+Past me tried to learn LaTeX the way you're supposed to learn a language you'll never actually speak: cover to cover, grammar first. Every attempt started the same way. Open a tutorial, decide I was going to understand the entire package ecosystem before writing a single line, and quietly give up two days later. I tried during engineering. I tried again early in my career at Samsung, right when I was preparing to move to OneAdvanced. Same pattern, same outcome. Zero to expert on day one isn't how anyone learns anything, and LaTeX was no exception.
 
 So when I actually needed a resume that got me the OneAdvanced job, I didn't use LaTeX at all. I used Novoresume, a drag-and-drop resume builder, and it did the job. No hard feelings there: it worked, and sometimes "it worked" is the only bar that matters.
 
