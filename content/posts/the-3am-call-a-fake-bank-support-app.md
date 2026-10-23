@@ -1,7 +1,7 @@
 ---
 title: 'The 3 AM Call: How a Fake "Customer Support" App Emptied My In-Laws'' Credit Card'
 date: 2026-10-23T09:00:00+01:00
-draft: true
+draft: false
 author: 'Puneeth Prakash'
 description: 'A late-night family emergency, a phone I could not uninstall an app from, and what I found when I tore the malware apart. Plus how to protect your parents.'
 
