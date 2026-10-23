@@ -1,0 +1,11 @@
+{{- /* Resolves images under assets/ (e.g. images/posts/<slug>/fig.png) so post bodies can use plain markdown; any other destination is passed through untouched. */ -}}
+{{- $dest := .Destination -}}
+{{- $img := "" -}}
+{{- if not (urls.Parse $dest).Scheme -}}
+  {{- $img = resources.Get (strings.TrimPrefix "/" $dest) -}}
+{{- end -}}
+{{- if $img -}}
+<img src="{{ $img.RelPermalink }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }} class="img-fluid d-block mx-auto" loading="lazy">
+{{- else -}}
+<img src="{{ $dest | safeURL }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }} class="img-fluid d-block mx-auto" loading="lazy">
+{{- end -}}
