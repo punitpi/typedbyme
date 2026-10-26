@@ -14,14 +14,14 @@ experiences:
       name: OMICRON electronics
       url: 'https://www.omicronenergy.com'
       location: Klaus, Vorarlberg, Austria
-      overview: 'OMICRON electronics is a global leader in test and measurement solutions for electrical power engineering, delivering innovative testing technology for the energy sector.'
+      overview: 'OMICRON electronics makes test and measurement solutions for electrical power engineering and the energy sector.'
     positions:
       - designation: DevSecOps Engineer / Software Engineer
         start: Dec 2025
         responsibilities:
           - Designed and deployed a full observability platform on Kubernetes (AKS) using the LGTM stack (Loki, Grafana, Tempo, Mimir), covering metrics, logs, traces, and alerting
-          - Built the Azure infrastructure from scratch using Terraform and packaged all observability components into a custom umbrella Helm chart for repeatable, production-grade deployments
-          - Applying DevSecOps practices including cloud infrastructure security, vulnerability management, and CI/CD pipeline hardening
+          - Built the Azure infrastructure from scratch using Terraform and packaged all observability components into a custom umbrella Helm chart for repeatable deployments
+          - Applying DevSecOps practices including cloud infrastructure security, vulnerability management and CI/CD pipeline hardening
 
   - company:
       name: OneAdvanced
@@ -29,7 +29,7 @@ experiences:
       location: Bengaluru, India
       # logo: /images/sections/companies/oneadvanced.png  # Add logo later
       # darkLogo: /images/sections/companies/oneadvanced-dark.png
-      overview: 'OneAdvanced is a leading UK-based software and services company providing mission-critical software for businesses.'
+      overview: 'OneAdvanced is a UK-based software and services company that provides software for businesses.'
     positions:
       - designation: Senior Software Engineer
         start: Feb 2021
@@ -45,11 +45,11 @@ experiences:
         start: Mar 2018
         end: Feb 2021
         responsibilities:
-          - Developed automated .NET WinForms application for software installation and database updates, enhancing efficiency by 92% and reducing setup time to 5 minutes
-          - Collaborated on serverless customer portal development using AWS Lambda, API Gateway, and S3
-          - Optimized critical SQL stored procedures, achieving 50% improvement in query performance and database efficiency
+          - Built a .NET WinForms tool that automated software installation and database updates, cutting setup from 60 minutes to 5 (a 92% reduction)
+          - Worked on a serverless customer portal using AWS Lambda, API Gateway and S3
+          - Optimized critical SQL stored procedures, improving query performance by 50%
           - Implemented Jenkins CI/CD pipelines for automated testing and deployment
-          - Gained expertise in React framework, contributing to front-end development initiatives
+          - Learned React and contributed to front-end work
 
   - company:
       name: Samsung R&D Institute India

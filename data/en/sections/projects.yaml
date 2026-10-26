@@ -39,7 +39,7 @@ projects:
     role: Creator
     timeline: '2024 - Present'
     repo: https://github.com/punitpi/typedbyme
-    summary: Personal portfolio and technical blog built with Hugo and the Toha v4 theme. Features dark mode support, GoatCounter analytics, integrated Spotify Now Playing bar, and optimized static site generation. Content managed through YAML config files and markdown posts.
+    summary: Personal portfolio and technical blog built with Hugo and the Toha v4 theme. It has dark mode, GoatCounter analytics and a Spotify Now Playing bar. Content lives in YAML files and markdown posts.
     tags: ['Hugo', 'JavaScript', 'SCSS', 'Static Site', 'Portfolio', 'Blog']
 
   - name: voiceScribe
@@ -53,7 +53,7 @@ projects:
     role: Creator
     timeline: '2024 - Present'
     repo: https://github.com/punitpi/homelab
-    summary: Infrastructure-as-code for a reproducible, resilient personal homelab. Local-first architecture on Raspberry Pi with automated deployment via Ansible and Docker Compose. Features Traefik reverse proxy, Authentik SSO, Tailscale mesh networking, and automated Restic backups to Backblaze B2. Runs services like AdGuard Home, FreshRSS, Mealie, and OpenWebUI.
+    summary: Infrastructure as code for my personal homelab. Local-first setup on a Raspberry Pi, deployed with Ansible and Docker Compose. It uses Traefik as the reverse proxy, Authentik for SSO, Tailscale for mesh networking and Restic for automated backups to Backblaze B2. Services include AdGuard Home, FreshRSS, Mealie and OpenWebUI.
     tags: ['Docker', 'Ansible', 'Raspberry Pi', 'Tailscale', 'Self-Hosting', 'Infrastructure', 'Automation']
 
   - name: Long Leave Planner
@@ -81,7 +81,7 @@ projects:
     role: Creator
     timeline: '2023'
     repo: https://github.com/punitpi/my-express-template
-    summary: Standard Express.js template with custom configurations and best practices for rapid API development. Includes authentication, error handling, and logging setup.
+    summary: Express.js starter template for building APIs quickly, with authentication, error handling and logging set up.
     tags: ['JavaScript', 'Node.js', 'Express.js', 'Backend']
 
   - name: dhaaga
