@@ -13,8 +13,7 @@
 
 ## Writing Style Notes
 
-- Avoid em dashes ( — ) in site content (summaries, skill descriptions, bio text). Use commas, colons, or rephrase instead. They read as AI-generated.
-- Write naturally and directly, as Puneeth would.
+How Puneeth writes, and how to edit that writing, lives in `~/.claude/me/voice.md`. Read it before writing or editing any post or site text. This file only covers blog mechanics.
 
 ## About Puneeth
 
@@ -74,26 +73,7 @@ typedbyme/
 ### Adding a New Blog Post
 
 1. Create `content/posts/<slug>.md`
-2. Use this front matter template:
-
-```yaml
----
-title: "Post Title"
-date: YYYY-MM-DDTHH:MM:SS+05:30
-author:
-  name: Puneeth Prakash
-  image: images/author/puneeth.png
-description: "Brief description for SEO and previews"
-tags: ["tag1", "tag2"]
-categories: ["Category Name"]
-menu:
-  sidebar:
-    name: "Short Name"
-    identifier: post-slug
-    weight: 10
----
-```
-
+2. Use the frontmatter template under Blog Writing Guidelines below.
 3. To feature a post, add its slug to `data/en/sections/featured-posts.yaml`.
 
 ### Updating Portfolio Data
@@ -108,48 +88,9 @@ All professional info lives in `data/en/sections/` YAML files. Edit the relevant
 
 ---
 
-## Professional Profile (for content generation)
+## Facts for posts
 
-### Skills
-
-| Category | Technologies |
-|---|---|
-| DevSecOps & CI/CD | GitHub Actions, Jenkins, Harness, SonarQube, IDS/IPS, vulnerability management, pipeline hardening |
-| Backend Development | Node.js, Express.js, .NET, Flask, microservices, RESTful APIs, Microsoft Graph API |
-| Cloud Platforms | AWS (Lambda, ECS, EKS, Fargate, API Gateway, CloudFront, S3, Route 53, SNS, SQS, IAM, CloudWatch), Azure (Functions, WebJobs, App Services, Blob Storage, KeyVault). Terraform + CloudFormation for IaC. |
-| Containers & Orchestration | Docker, Kubernetes (EKS), Inlets Pro, automated TLS |
-| Databases | MSSQL, DynamoDB, MongoDB, MySQL, Redis |
-| Programming Languages | JavaScript (Node.js), C#, Python, SQL, Bash, YAML, React |
-
-### Work History
-
-**OMICRON electronics** — DevSecOps Engineer / Software Engineer (Dec 2025 – Present)
-- Klaus, Vorarlberg, Austria
-- DevSecOps practices, security automation, CI/CD pipeline hardening
-- Cloud-native architecture and infrastructure as code in the energy technology sector
-
-**OneAdvanced** — Senior Software Engineer (Feb 2021 – Oct 2025)
-- Cloud-native solutions on AWS (Lambda, ECS, DynamoDB) and Azure (Functions, WebJobs)
-- Built BYOBI platform with dbt + Snowflake
-- Kubernetes on EKS with Inlets Pro, cert-manager, GitOps
-- CI/CD with GitHub Actions, Harness, Terraform/CloudFormation (70% deployment time reduction)
-- OAuth2/SSO/2FA with Keycloak; pentest and SonarQube vulnerability fixes
-- $1,000+/month AWS cost optimization
-- Technical training on AWS services and architecture
-
-**OneAdvanced** — Software Engineer (Mar 2018 – Feb 2021)
-- .NET WinForms automation tool: 92% deployment time reduction (60 min → 5 min)
-- AWS Lambda, API Gateway, S3 serverless apps
-- Jenkins CI/CD; MSSQL stored procedure optimization (50% improvement)
-
-**Samsung R&D Institute India** — Test Engineer (Mar 2017 – Nov 2017)
-- 600+ test cases for Project Bixby (functional, integration, performance, regression)
-
-### Certifications & Accomplishments
-
-- **AWS Certified Solutions Architect – Associate** (2023)
-- **Spot Award** – Critical project completion ahead of schedule (OneAdvanced, 2023)
-- **Cost Optimization** – $1,000+/month AWS savings (OneAdvanced, 2022)
+Use only the "Proof I can use" list in `~/.claude/me/voice.md` for numbers, roles and certifications in posts. The site's own career data is in `data/en/sections/*.yaml`.
 
 ---
 
@@ -162,28 +103,18 @@ All professional info lives in `data/en/sections/` YAML files. Edit the relevant
 | Building Your Portfolio & Blog with Hugo | Dec 2025 | Documentation & Guides | Comprehensive Hugo setup guide from zero to deployed |
 | Building My Homelab: A Journey into Self-Hosting | Sep 2025 | Life & Processes | Intel NUC homelab with Proxmox, pfSense, Home Assistant, Immich |
 
-**Recurring themes:** hands-on learning, self-hosting, cloud/DevOps, practical documentation, security awareness.
 
 ---
 
 ## Blog Writing Guidelines
 
-### Voice & Identity
+### Voice
 
-Write as Puneeth Prakash — a software engineer sharing knowledge in a conversational, approachable way while maintaining technical authority. Mental model: a software engineer chatting with a friend over coffee, not an English professor writing a thesis.
-
-- Always use first-person ("I", "I've learned") and second-person for the reader ("you", "your")
-- Use contractions naturally ("you're", "I'll", "don't")
-- Simple words over fancy ones ("use" not "utilize", "help" not "facilitate")
-- Encouraging tone, never condescending
-
-**Humor:** 4-5 out of 10. Never forced. Approved styles:
-- Self-deprecating: "Past me learned this lesson at least five times before it stuck"
-- Tech culture: "It's always DNS. Every. Single. Time."
-- Relatable frustration: "Coffee count: 3. Working code count: 0."
-- Witty asides: "Spoiler alert: It's complicated."
+Voice, editing rules, positions, off-limits topics and usable numbers are all in `~/.claude/me/voice.md`. Posts start from Puneeth's own story or notes (dictated or typed); if there's only a topic, ask for the story first. Run `/humanize-me` on the draft.
 
 ### Post Structure
+
+A starting point for how-tos and guides, not a template every post must fill. Personal and reflective posts follow the story instead, and can skip sections like Prerequisites or a formal Conclusion. Use sentence-case headings that name what the section holds.
 
 ```
 ## Introduction / Hook
@@ -242,9 +173,7 @@ menu:
 
 ### Opening Hook Patterns
 
-- **Personal story:** "It all started innocently enough. I was scrolling through..."
-- **Problem statement:** "[Task] can be [challenging]. In this guide, I'll walk you through [solution]..."
-- **Reflective:** "After years of [X], I finally [Y]. And you know what? It was easier than I expected..."
+Open on what actually happened or the specific problem, in Puneeth's own words. Don't announce what the post will cover.
 
 ### Formatting Rules
 
@@ -260,24 +189,13 @@ menu:
 - Always include the language identifier
 - Add comments explaining what the code does
 - Provide complete, runnable examples where possible
-- Always add a sentence of context before and after every block
+- Add a sentence of context before a block when the reader needs it. Skip a trailing sentence that only restates the block.
 
 ### Closing Pattern
 
+End the post on its last real point. A how-to can close with next steps in plain sentences or a short numbered list. A personal post can simply stop. Always keep the Resources list (when there are links) and the contact line:
+
 ```markdown
-## Conclusion
-
-[1-2 wrap-up sentences]
-
-- **Benefit 1**: explanation
-- **Benefit 2**: explanation
-
-### Your Next Steps
-
-1. **Action 1**: details
-2. **Action 2**: details
-
----
 ## Resources
 - [Resource](URL)
 
@@ -285,21 +203,15 @@ menu:
 Questions? Reach out at contact@puneeth.io
 ```
 
-**Closing line options:** "Just start." / "Your future self will thank you." / "Now stop reading and start building."
+Don't recap the post at the end.
 
 ### Quality Checklist
 
-- [ ] Hook engages in first 2–3 sentences
 - [ ] All code blocks have language identifiers and inline comments
-- [ ] Voice is conversational throughout (first + second person)
 - [ ] Technical terms introduced with context
-- [ ] Conclusion has actionable next steps
+- [ ] `/humanize-me` was run
 - [ ] Post ends with contact CTA
 - [ ] Frontmatter is complete
-
-### The One Rule
-
-If something sounds too fancy or complicated, simplify it. Write like you talk.
 
 ---
 
