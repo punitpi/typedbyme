@@ -23,7 +23,7 @@ accomplishments:
   organization:
     name: OneAdvanced
     url: https://www.oneadvanced.com
-  courseOverview: Recognized with a Spot Award for completing a critical project ahead of schedule, demonstrating exceptional technical execution and project management.
+  courseOverview: Recognized with a Spot Award for completing a critical project ahead of schedule.
   # certificateURL: "" # Internal company award
 
 - name: Cost Optimization Achievement
@@ -31,7 +31,7 @@ accomplishments:
   organization:
     name: OneAdvanced
     url: https://www.oneadvanced.com
-  courseOverview: Achieved $1,000+ monthly savings through AWS cost optimization by implementing strategic resource management practices including right-sizing, reserved instances, and automated shutdown policies.
+  courseOverview: Cut AWS spend by $1,000+ a month through right-sizing, reserved instances and automated shutdown of idle resources.
   # certificateURL: "" # Internal company achievement
 
 # Add more certifications/accomplishments as you earn them

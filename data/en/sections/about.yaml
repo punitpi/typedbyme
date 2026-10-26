@@ -18,7 +18,7 @@ company:
 resume: 'files/Resume.pdf'
 
 # a summary about you
-summary: 'Software developer with 9+ years of experience specialising in DevSecOps, cloud-native architecture, and microservices. Currently building secure, reliable engineering systems at OMICRON electronics in Austria. I work across C#, Node.js, AWS and Azure, automating CI/CD workflows, hardening pipelines, and designing APIs and infrastructure that scale. Passionate about security, self-hosting, and homelab. Outside work I enjoy homebrewing and backpacking.'
+summary: 'Software developer with 9+ years of experience in DevSecOps, cloud-native architecture and microservices. Currently building secure, reliable engineering systems at OMICRON electronics in Austria. I work across C#, Node.js, AWS and Azure, automating CI/CD workflows, hardening pipelines, and designing APIs and infrastructure that scale. I care about security, self-hosting and homelabs. Outside work I enjoy homebrewing and backpacking.'
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
