@@ -7,7 +7,7 @@ disable-model-invocation: true
 # LinkedIn Post for a Blog Announcement
 
 Draft a LinkedIn post that announces one of Puneeth's blog posts at typedbyme.puneeth.io. This is
-invoked deliberately, when he's decided a post is ready to announce, not automatically right
+invoked deliberately, once Puneeth decides a post is ready to announce, not automatically right
 after a post is drafted (drafting and announcing happen on different timelines).
 
 ## Input
@@ -17,9 +17,9 @@ frontmatter and content before drafting anything.
 
 ## Voice
 
-Distinct from the blog's voice: LinkedIn posts are shorter, punchier, hook-first. Still
-first-person, still conversational, no em dashes (same rule as the blog). Avoid corporate
-LinkedIn cliches ("I'm thrilled to announce", "Excited to share").
+Read `~/.claude/me/voice.md` (how Puneeth writes) and `~/.claude/linkedin/voice.md` (the LinkedIn
+notes) before drafting. Build the post from the blog post's own story and words. Run the
+`humanize-me` skill on the draft.
 
 ## What Actually Drives Engagement (Researched, Not Guessed)
 
@@ -85,8 +85,8 @@ Read the full post: [live URL, https://typedbyme.puneeth.io/posts/<slug>/]
 #Tag1 #Tag2 #Tag3
 ```
 
-- Pull the 3 key takeaways from the post's actual headers/content, not generic restatements of
-  the title.
+- Keep the takeaway bullets only when the post is list-shaped, like a how-to. Otherwise drop them
+  and tell the story. Pull them from the post's actual content, not restatements of the title.
 - Pull hashtags from the post's `tags` frontmatter field, formatted without spaces. Keep it to a
   handful — hashtags are a minor signal next to tagging real people when applicable.
 - If there's a real person or maintainer to credit (a tool's author, someone who inspired the
